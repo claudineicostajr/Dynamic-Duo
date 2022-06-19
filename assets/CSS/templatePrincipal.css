@@ -1,0 +1,88 @@
+/* Váriaveis de cores */
+:root{
+    --cinza-claro-:#EEE;
+    --preto-claro-:#111;
+    --cinza-escuro-:#555;
+    --bgForm-:#222;
+}
+/* Váriaveis de cores */
+/* style do body */
+body{
+    margin-top: 0px;
+    background-image: url(../IMGs/imgRepositorio/bgPrincipal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Exo 2', sans-serif;
+    color: var(--cinza-claro-);
+}
+/* style do body */
+/* style nav */
+nav{
+    background-color: var(--preto-claro-);
+    display: flex;
+    justify-content: space-between;
+}
+nav li{
+    list-style: none;
+    display: block;
+    cursor: pointer;
+    padding: 4px 8px 4px 8px;
+    border-radius: 3px;
+}
+li:hover{
+    background-color:var(--cinza-escuro-);
+    text-decoration: underline;
+}
+
+nav ul{
+    display: flex;
+}
+#gerenciador{
+    flex:1;
+    justify-content: space-around;
+    padding: 0;
+}
+#logout{
+    flex: 1;
+    justify-content: flex-end;
+}
+/* style nav */
+/* style main */
+#conteudo{
+    display:flex;
+    justify-content: space-between;
+}
+#ladoEsquerdo{
+    flex:3;
+}
+#ladoDireito{
+    flex: 1;
+}
+#ladoEsquerdo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#cadastrar,
+#gerarMissao{
+    flex: 1;
+}
+#ladoDireito{
+    display:flex;
+    justify-content: center;
+    height: 91vh;
+    background-color:var(--bgForm-);
+    overflow: hidden;
+}
+table{
+    background-color: var(--bgForm-);
+    padding: 10px;
+    max-width: 50%;
+    border-bottom-right-radius: 20px;
+}
+#moralidade{
+    display:flex;
+    justify-content: space-around;
+}
+
+/* style main */
