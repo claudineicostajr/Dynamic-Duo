@@ -3,7 +3,7 @@
     --cinza-claro-:#EEE;
     --preto-claro-:#111;
     --cinza-escuro-:#555;
-    --bgForm-:#222;
+    --bgForm-:rgba(34, 34, 34, 0.61);
 }
 /* Váriaveis de cores */
 /* style do body */
@@ -22,9 +22,9 @@ nav{
     display: flex;
     justify-content: space-between;
 }
-nav li{
+nav li,
+aside li{
     list-style: none;
-    display: block;
     cursor: pointer;
     padding: 4px 8px 4px 8px;
     border-radius: 3px;
@@ -33,17 +33,21 @@ li:hover{
     background-color:var(--cinza-escuro-);
     text-decoration: underline;
 }
-
+nav figure img{
+    width: 50px;
+    border-radius: 50%;
+    cursor:pointer;
+}
+nav figure{
+    padding: 0;
+    flex: 1;
+    margin: 8px 20px;
+}
 nav ul{
     display: flex;
 }
-#gerenciador{
-    flex:1;
-    justify-content: space-around;
-    padding: 0;
-}
 #logout{
-    flex: 1;
+    flex: 4;
     justify-content: flex-end;
 }
 /* style nav */
@@ -51,6 +55,17 @@ nav ul{
 #conteudo{
     display:flex;
     justify-content: space-between;
+}
+aside{
+    background-color: var(--preto-claro-);
+    min-height: 89vh;
+}
+#gerenciador{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 50%;
+    padding: 0;
 }
 #ladoEsquerdo{
     flex:3;
@@ -61,28 +76,56 @@ nav ul{
 #ladoEsquerdo{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
-#cadastrar,
-#gerarMissao{
-    flex: 1;
-}
-#ladoDireito{
+/* #ladoDireito{
     display:flex;
     justify-content: center;
     height: 91vh;
     background-color:var(--bgForm-);
     overflow: hidden;
-}
-table{
+} */
+section{
+    border:2px solid var(--cinza-claro-);
     background-color: var(--bgForm-);
-    padding: 10px;
-    max-width: 50%;
     border-bottom-right-radius: 20px;
+    display: flex;
+}
+form{
+    padding: 10px;
+    max-width: 100%;}
+form::after{
+    content:'';
+    width: 200px;
+    height: 3px;
+    background-color: currentColor;
 }
 #moralidade{
     display:flex;
     justify-content: space-around;
+}
+textarea{
+    resize:none;
+    width:97%;
+}
+
+#btnForm{
+    display: flex;
+    min-width:50%;
+    justify-content: space-around;
+}
+.form,
+.consultas{
+    max-width: 50%;
+}
+
+/* #btnForm button{
+    flex:1;
+} */
+
+#corpo{
+    min-width:30%;
+    max-width: 100%;
+    background-image: url(../IMGs/imgRepositorio/1cYrMYF.gif);
 }
 
 /* style main */

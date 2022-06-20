@@ -1,16 +1,21 @@
 $(function(){
     $('#btnCadastrar').bind('click',function(){
-        $('#cadastrar').toggle('slow');
+        $('#individuo').toggle('slow');
     })
-    $('#btnGerarMissao').bind('click',function(){
-        $('#gerarMissao').toggle('slow');
+    $('#btnMissao').bind('click',function(){
+        $('#missao').toggle('slow');
     })
     $('#btnRecursos').bind('click',function(){
-        $('#ladoDireito').toggle('slow');
+        $('#recursos').toggle('slow');
     })
+    $('#logo').bind('click',function(){
+        $('aside').toggle('slow');
+    })
+    
 
-
-
+    $('#btnTeste').on('click',function(){
+        $('#teste').load('teste2.html');
+    })
 
 
 
