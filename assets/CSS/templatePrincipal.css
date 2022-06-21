@@ -1,7 +1,7 @@
 /* Váriaveis de cores */
 :root{
     --cinza-claro-:#EEE;
-    --preto-claro-:#111;
+    --preto-claro-:#333;
     --cinza-escuro-:#555;
     --bgForm-:rgba(34, 34, 34, 0.61);
 }
@@ -129,3 +129,10 @@ textarea{
 }
 
 /* style main */
+/* teste */
+.menu{
+    display: none;
+}
+.ativo{
+    display: block;
+}
