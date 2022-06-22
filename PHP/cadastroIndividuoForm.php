@@ -93,9 +93,6 @@
             </div>
         </form>
     </div>
-    <div class="consultas">
-        ....
-    </div>
 </body>
 <script src="../assets/JS/jquery-3.6.0.min.js"></script>
 <script src="../assets/JS/script.js"></script>

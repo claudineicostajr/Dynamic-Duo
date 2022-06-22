@@ -38,6 +38,14 @@
                 </tr>
                 <tr>
                     <td>
+                        <label for="">Data da missão</label>
+                    </td>
+                    <td>
+                        <input type="date" name="" id="">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                         <label for="">Local(CEP)</label>
                     </td>
                     <td>

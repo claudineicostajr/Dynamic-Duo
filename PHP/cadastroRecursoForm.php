@@ -29,22 +29,14 @@
                     <td>
                         <input type="text" name="nomeRecurso" id="nomeRecurso">
                     </td>
-                    <tr>
-                        <td>
-                            <label for="">Descrição</label>
-                        </td>
-                        <td>
-                            <textarea name="descricaoRecurso" id="descricaoRecurso"  rows="5"></textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="">Quantidade</label>
-                        </td>
-                        <td>
-                            <input type="number" name="qtd" id="qtd" maxlength="20">
-                        </td>
-                    </tr>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Descrição</label>
+                    </td>
+                    <td>
+                        <textarea name="descricaoRecurso" id="descricaoRecurso"  rows="5"></textarea>
+                    </td>
                 </tr>
                 </tbody>
             </table>

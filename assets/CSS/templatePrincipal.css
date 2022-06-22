@@ -23,16 +23,23 @@ nav{
     justify-content: space-between;
 }
 nav li,
-aside li{
+aside li,
+h3{
     list-style: none;
     cursor: pointer;
-    padding: 4px 8px 4px 8px;
+    padding: 2px 4px 2px 4px;
     border-radius: 3px;
 }
-li:hover{
+h3{
+    margin: 12px 3px; 
+}
+
+li:hover,
+h3:hover{
     background-color:var(--cinza-escuro-);
     text-decoration: underline;
 }
+
 nav figure img{
     width: 50px;
     border-radius: 50%;
@@ -58,14 +65,16 @@ nav ul{
 }
 aside{
     background-color: var(--preto-claro-);
-    min-height: 89vh;
 }
 #gerenciador{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    min-height: 50%;
+    justify-content: space-between;
+    min-height: 93%;
     padding: 0;
+}
+#gerenciador li{
+    padding: 5px 3px 5px 3px;
 }
 #ladoEsquerdo{
     flex:3;
@@ -88,16 +97,17 @@ section{
     border:2px solid var(--cinza-claro-);
     background-color: var(--bgForm-);
     border-bottom-right-radius: 20px;
-    display: flex;
+    /* display: flex; */
+    max-width: 40%;
 }
+
+
 form{
     padding: 10px;
-    max-width: 100%;}
-form::after{
-    content:'';
-    width: 200px;
-    height: 3px;
-    background-color: currentColor;
+    max-width: 100%;
+}
+table{
+    width: 100%;
 }
 #moralidade{
     display:flex;
@@ -105,7 +115,10 @@ form::after{
 }
 textarea{
     resize:none;
-    width:97%;
+    width:100%;
+}
+td input{
+    width: 100%;
 }
 
 #btnForm{
@@ -113,11 +126,6 @@ textarea{
     min-width:50%;
     justify-content: space-around;
 }
-.form,
-.consultas{
-    max-width: 50%;
-}
-
 /* #btnForm button{
     flex:1;
 } */
@@ -129,10 +137,18 @@ textarea{
 }
 
 /* style main */
-/* teste */
-.menu{
+/* toggles */
+.menu,
+.subMenu{
     display: none;
 }
 .ativo{
     display: block;
 }
+
+/* toggles */
+
+/* teste */
+/* teste */
+ 
+/* primeiro step point 800 de width */

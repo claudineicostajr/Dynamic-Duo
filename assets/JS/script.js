@@ -1,23 +1,30 @@
 $(function(){
-    $('#btnCadastrar').bind('click',function(){
+
+    $('#btnCadastrarInviduo').on('click',function(){
         $('#individuo').toggle('slow');
-        $('#individuo').load('PHP/cadastroIndividuoForm.php');
         $('#individuo').removeClass('menu');
         $('#individuo').addClass('ativo');
+        $('#individuo').load('PHP/cadastroIndividuoForm.php');
     })
-    $('#btnMissao').bind('click',function(){
-        $('#missao').load('PHP/cadastroMissaoForm.php');
+    $('#btnConcultarInviduo').on('click',function(){
+        $('#individuo').toggle('slow');
+        $('#individuo').removeClass('menu');
+        $('#individuo').addClass('ativo');
+        $('#individuo').load('PHP/consultaInviduoForm.php');
+    })
+    $('#btnCadastrarMissao').on('click',function(){
         $('#missao').toggle('slow');
         $('#missao').removeClass('menu');
         $('#missao').addClass('ativo');
+        $('#missao').load('PHP/cadastroMissaoForm.php');
     })
-    $('#btnRecursos').bind('click',function(){
-        $('#recursos').load('PHP/cadastroRecursoForm.php');
+    $('#btnCadastrarRecursos').on('click',function(){
         $('#recursos').toggle('slow');
         $('#recursos').removeClass('menu');
         $('#recursos').addClass('ativo');
+        $('#recursos').load('PHP/cadastroRecursoForm.php');
     })
-    $('#logo').bind('click',function(){
+    $('#logo').on('click',function(){
         $('aside').toggle('slow');
     })
     
