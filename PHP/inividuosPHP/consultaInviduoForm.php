@@ -16,7 +16,7 @@
 </head>
 <body>
     <div class="form">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam reprehenderit facere iste incidunt officiis suscipit deleniti voluptas? Quaerat magnam ipsam reprehenderit provident officiis enim eaque. Aut nulla nihil fugit laboriosam.
+        <input type="text">
         </form>
     </div>
 </body>

@@ -1,0 +1,52 @@
+/* Váriaveis de cores */
+:root{
+    --cinza-claro-:#EEE;
+    --preto-claro-:#333;
+    --cinza-escuro-:#555;
+    --bgForm-:rgba(34, 34, 34, 0.61);
+}
+/* Váriaveis de cores */
+/* bg */
+body{
+    background-color: #000;
+    background-image: url(../IMGs/imgRepositorio/bgPrincipal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Exo 2', sans-serif;
+    color: var(--cinza-claro-);
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+/* bg */
+
+
+/* login */
+
+#formLogin{
+    background-color: var(--bgForm-);
+    padding: 10px;
+    gap:5px;
+    border:2px solid var(--cinza-claro-);
+    border-radius: 5px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+form h3{
+    margin-top: 0;
+    text-align: center;
+}
+#divInput{
+    display: flex;
+    flex-direction: column;
+}
+form button{
+    cursor: pointer;
+}
+
+
+/* login */

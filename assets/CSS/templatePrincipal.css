@@ -8,6 +8,7 @@
 /* Váriaveis de cores */
 /* style do body */
 body{
+    background-color: #000;
     margin-top: 0px;
     background-image: url(../IMGs/imgRepositorio/bgPrincipal.jpg);
     background-repeat: no-repeat;
