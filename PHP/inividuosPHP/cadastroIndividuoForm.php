@@ -16,7 +16,7 @@
 </head>
 <body>
     <div class="form">
-        <form  id="cadastrarIndividuo" action="" method="post">
+        <form  id="cadastrarIndividuo" action="cadastroIndividuo.php" method="post">
             <table>
                 <tbody>
                 <th colspan=2>Cadastro de indivíduo</th>
