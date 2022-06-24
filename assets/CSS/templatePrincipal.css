@@ -59,6 +59,7 @@ nav ul{
     justify-content: flex-end;
 }
 /* style nav */
+
 /* style main */
 #conteudo{
     display:flex;
@@ -78,14 +79,14 @@ aside{
     padding: 5px 3px 5px 3px;
 }
 #ladoEsquerdo{
-    flex:3;
+    flex:2;
 }
 #ladoDireito{
     flex: 1;
 }
 #ladoEsquerdo{
-    display: flex;
-    flex-direction: column;
+    /* display: flex; */
+    /* flex-direction: column; */
 }
 /* #ladoDireito{
     display:flex;
@@ -98,8 +99,7 @@ section{
     border:2px solid var(--cinza-claro-);
     background-color: var(--bgForm-);
     border-bottom-right-radius: 20px;
-    /* display: flex; */
-    max-width: 40%;
+    /* max-width: 40%; */
 }
 
 
@@ -110,13 +110,13 @@ form{
 table{
     width: 100%;
 }
+textarea{
+    width: 100%;
+    resize: none;
+}
 #moralidade{
     display:flex;
     justify-content: space-around;
-}
-textarea{
-    resize:none;
-    width:100%;
 }
 td input{
     width: 100%;
@@ -125,7 +125,7 @@ td input{
 #btnForm{
     display: flex;
     min-width:50%;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 /* #btnForm button{
     flex:1;
@@ -148,6 +148,14 @@ td input{
 }
 
 /* toggles */
+
+
+/* recursos */
+/* #recursoForm{
+    width: 70%;
+} */
+
+/* recursos */
 
 /* teste */
 /* teste */

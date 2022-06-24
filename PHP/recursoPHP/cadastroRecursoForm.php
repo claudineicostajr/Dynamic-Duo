@@ -15,8 +15,8 @@
     <title>Cadastro de Individuos</title>
 </head>
 <body>
-    <div class="form">
-        <form action="" method="post">
+    <div class="form"id="recursoForm">
+        <form action=""  method="post">
             <table>
                 <tbody>
                 <th colspan=2>
@@ -35,11 +35,12 @@
                         <label for="">Descrição</label>
                     </td>
                     <td>
-                        <textarea name="descricaoRecurso" id="descricaoRecurso"  rows="5"></textarea>
+                        <input type="text" name="descricaoRecurso" id="">
                     </td>
                 </tr>
                 </tbody>
             </table>
+            <br><br>
             <div id="btnForm">
                 <button type="reset">Limpar</button>
                 <button type="submit">Cadastrar</button>
