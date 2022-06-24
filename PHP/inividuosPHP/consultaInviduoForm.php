@@ -11,14 +11,65 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/CSS/normalize.css/normalize.css">
     <link rel="shortcut icon" href="../assets/IMGs/icons/favicon-logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../assets/CSS/templatePrincipal.css">
+    <link rel="stylesheet" href="../assets/CSS/templateConsulta.css">
     <title>Consultas de Individuos</title>
 </head>
 <body>
-    <div class="form">
-        <input type="text">
-        </form>
-    </div>
+<input type="text" name="pesquisarIndividuos" id="pesquisarIndividuos">
+<button id="btnPesquisarIndividuos" type="submit">Pesquisar</button>
+<div id="tabelaResultados">
+    <table>
+        <tbody>
+            <th>
+                <img src="" alt="">
+            </th>
+            <th>
+                Alter Ego
+            </th>
+            <th>
+                Nome
+            </th>
+            <th>
+                Afiliação
+            </th>
+            <th>
+                Email
+            </th>
+            <th>
+                Moralidade
+            </th>
+            <tr>
+                <td>
+                    <img src="" alt="">
+                </td>
+                <td>
+                    Capitão América
+                </td>
+                <td>
+                    Steve Rogers
+                </td>
+                <td>
+                    Vingadores
+                </td>
+                <td>
+                    steve_rogers@vingadores.com
+                </td>
+                <td>
+                    <ul>
+                        <li>Força</li>
+                        <li>Velocidade</li>
+                        <li>Vigor</li>
+                    </ul>
+                </td>
+                <td>
+                    Herói
+                </td>
+            </tr>
+        </tbody>
+    </div> 
+    </table>
+</div>
+
 </body>
 <script src="../assets/JS/jquery-3.6.0.min.js"></script>
 <script src="../assets/JS/script.js"></script>

@@ -54,7 +54,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <label for="">Agentes</label>
+                        <label for="">Agente</label>
                     </td>
                     <td>
                         <select name="selecaoAgentes" id="selecaoAgentes">
@@ -85,23 +85,21 @@
                         <label for="">Recursos</label>
                     </td>
                     <td>
-                        <select name="selecaoRecursos" id="selecaoAgentes">
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                        </select>
+                        <input type="checkbox" name="selecaoRecursos" id="selecaoRecursos">
+                        <input type="checkbox" name="selecaoRecursos" id="selecaoRecursos">
+                        <input type="checkbox" name="selecaoRecursos" id="selecaoRecursos">
                     </td>
                 </tr>
             </tbody>
         </table>
+        <br><br>
         <div id="btnForm">
             <button type="reset">Limpar</button>
             <button type="submit">Cadastrar</button>
         </div>
     </form>
     </div>
+    <br><br>
     <div class="consultas">
 
     </div>

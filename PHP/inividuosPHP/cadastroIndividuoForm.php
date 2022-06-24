@@ -49,7 +49,7 @@
                         <label for="">Habilidades</label>
                     </td>
                     <td>
-                        <textarea name="habilidades" id="habilidades"  rows="5" ></textarea>
+                        <input type="text" name="habilidade" id="">
                     </td>
                 </tr>
                 <tr>
@@ -87,6 +87,7 @@
 
                 </tbody>
             </table>
+            <br><br>
             <div id="btnForm">
                 <button type="reset">Limpar</button>
                 <button type="submit">Cadastrar</button>
