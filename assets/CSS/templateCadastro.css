@@ -1,0 +1,86 @@
+/* style main */
+#conteudo{
+    display:flex;
+    justify-content: space-between;
+}
+aside{
+    background-color: var(--preto-claro-);
+}
+#gerenciador{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 93%;
+    padding: 0;
+}
+#gerenciador li{
+    padding: 5px 3px 5px 3px;
+}
+#ladoEsquerdo{
+    flex:2;
+}
+#ladoDireito{
+    flex: 1;
+}
+#ladoEsquerdo{
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+/* #ladoDireito{
+    display:flex;
+    justify-content: center;
+    height: 91vh;
+    background-color:var(--bgForm-);
+    overflow: hidden;
+} */
+section{
+    border:2px solid var(--cinza-claro-);
+    background-color: var(--bgForm-);
+    border-bottom-right-radius: 20px;
+    /* max-width: 40%; */
+}
+
+
+form{
+    padding: 10px;
+    max-width: 100%;
+}
+table{
+    width: 100%;
+}
+textarea{
+    width: 100%;
+    resize: none;
+}
+#moralidade{
+    display:flex;
+    justify-content: space-around;
+}
+td input{
+    width: 100%;
+}
+
+#btnForm{
+    display: flex;
+    min-width:50%;
+    justify-content: space-evenly;
+}
+/* #btnForm button{
+    flex:1;
+} */
+
+#corpo{
+    min-width:30%;
+    max-width: 100%;
+    background-image: url(../IMGs/imgRepositorio/1cYrMYF.gif);
+}
+
+/* style main */
+/* toggles */
+.menu,
+.subMenu{
+    display: none;
+}
+.ativo{
+    display: block;
+}
