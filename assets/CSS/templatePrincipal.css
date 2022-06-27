@@ -9,7 +9,8 @@
 /* style do body */
 body{
     background-color: #000;
-    margin-top: 0px;
+    margin: 0px;
+
     background-image: url(../IMGs/imgRepositorio/bgPrincipal.jpg);
     background-repeat: no-repeat;
     background-size: cover;
