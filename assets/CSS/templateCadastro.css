@@ -1,47 +1,10 @@
-/* style main */
-#conteudo{
-    display:flex;
-    justify-content: space-between;
-}
-aside{
-    background-color: var(--preto-claro-);
-}
-#gerenciador{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 93%;
-    padding: 0;
-}
-#gerenciador li{
-    padding: 5px 3px 5px 3px;
-}
-#ladoEsquerdo{
-    flex:2;
-}
-#ladoDireito{
-    flex: 1;
-}
-#ladoEsquerdo{
-    /* display: flex; */
-    /* flex-direction: column; */
-}
-/* #ladoDireito{
-    display:flex;
-    justify-content: center;
-    height: 91vh;
-    background-color:var(--bgForm-);
-    overflow: hidden;
-} */
-section{
-    border:2px solid var(--cinza-claro-);
-    background-color: var(--bgForm-);
-    border-bottom-right-radius: 20px;
-    /* max-width: 40%; */
-}
 
 
-form{
+/* Cadastro Indivuduo */
+
+#cadastrarIndividuo,
+#cadastrarMissao,
+#cadastroRecurso{
     padding: 10px;
     max-width: 100%;
 }
@@ -76,11 +39,6 @@ td input{
 }
 
 /* style main */
-/* toggles */
-.menu,
-.subMenu{
-    display: none;
-}
-.ativo{
-    display: block;
-}
+
+
+/* Cadastro Indivuduo */

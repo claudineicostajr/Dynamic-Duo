@@ -54,14 +54,6 @@
                 </tr>
                 <tr>
                     <td>
-                        <label for="">Email</label>
-                    </td>
-                    <td>
-                        <input type="email" name="email" id="">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
                         <label for="">Moralidade</label>
                     </td>
                     <td id="moralidade">

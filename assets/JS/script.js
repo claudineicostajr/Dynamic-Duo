@@ -22,7 +22,7 @@ $(function(){
         $('#missao').toggle('slow');
         $('#missao').removeClass('menu');
         $('#missao').addClass('ativo');
-        $('#missao').load('PHP/missaoPHP/consultaMissao.php');
+        $('#missao').load('PHP/missaoPHP/consultaMissaoForm.php');
     })
     $('#btnCadastrarRecursos').on('click',function(){
         $('#recursos').toggle('slow');
@@ -35,7 +35,7 @@ $(function(){
         $('#recursos').toggle('slow');
         $('#recursos').removeClass('menu');
         $('#recursos').addClass('ativo');
-        $('#recursos').load('PHP/recursoPHP/consultaRecursos.php');
+        $('#recursos').load('PHP/recursoPHP/consultaRecursosForm.php');
     })
 
     $('#logo').on('click',function(){

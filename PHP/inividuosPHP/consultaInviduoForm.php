@@ -15,33 +15,34 @@
     <title>Consultas de Individuos</title>
 </head>
 <body>
-<input type="text" name="pesquisarIndividuos" id="pesquisarIndividuos">
-<button id="btnPesquisarIndividuos" type="submit">Pesquisar</button>
-<div id="tabelaResultados">
-    <table>
+<div id="pesquisaIndividuos">
+    <input type="text" name="pesquisarIndividuosInput" id="pesquisarIndividuosInput" placeholder="Busca por indivíduos">
+    <button id="btnPesquisarIndividuos" type="submit">Pesquisar</button>
+</div>
+<div id="tabelaResultadosIndividuos">
+    <table id="tabelaIndividuos">
         <tbody>
-            <th>
-                <img src="" alt="">
-            </th>
-            <th>
-                Alter Ego
-            </th>
-            <th>
-                Nome
-            </th>
-            <th>
-                Afiliação
-            </th>
-            <th>
-                Email
-            </th>
-            <th>
-                Moralidade
-            </th>
             <tr>
-                <td>
-                    <img src="" alt="">
+                <td rowspan="2">  
+                    <img width="80" height="80" src="../../assets/IMGs/imgRepositorio/capitao-america(perfil).jpg" alt="">
                 </td>
+                <td>
+                    Alterego
+                </td>
+                <td>
+                    Nome
+                </td>
+                <td>
+                    Afiliação
+                </td>
+                <td>
+                    Habilidades
+                </td>
+                <td>
+                    Moralidade
+                </td>
+            </tr>
+            <tr>
                 <td>
                     Capitão América
                 </td>
@@ -52,10 +53,7 @@
                     Vingadores
                 </td>
                 <td>
-                    steve_rogers@vingadores.com
-                </td>
-                <td>
-                    <ul>
+                    <ul id="listaHabilidades">
                         <li>Força</li>
                         <li>Velocidade</li>
                         <li>Vigor</li>
@@ -68,6 +66,7 @@
         </tbody>
     </div> 
     </table>
+    <br>
 </div>
 
 </body>

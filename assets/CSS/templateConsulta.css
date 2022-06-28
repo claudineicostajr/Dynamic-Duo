@@ -6,7 +6,40 @@
     --bgForm-:rgba(34, 34, 34, 0.61);
 }
 /* Váriaveis de cores */
-body{
-    font-family:monospace;
-    color: var(--cinza-escuro-);
+
+/* Consulta de Individuos */
+/* #tabelaIndividuos{
+    font-size: small;
+} */
+
+#pesquisaIndividuos,
+#pesquisaMissao{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
+
+#tabelaIndividuos,
+#tabelaMissao{
+    border-bottom: 2px solid var(--cinza-claro-); 
+    max-width: 90%;
+}
+#tabelaIndividuos td,
+#tabelaMissao td{
+    padding: 10px;
+}
+
+#listaHabilidades{
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+/* Consulta de Individuos */
+
+
+/* Consulta de Missão */
+#statusMissaoRadio{
+    display: flex;
+}
+/* Consulta de Missão */

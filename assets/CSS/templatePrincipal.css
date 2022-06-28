@@ -81,9 +81,12 @@ aside{
 #ladoEsquerdo{
     flex:2;
 }
+
+#middle,
 #ladoDireito{
-    flex: 1;
+    flex:1;
 }
+
 #ladoEsquerdo{
     /* display: flex; */
     /* flex-direction: column; */
@@ -95,6 +98,7 @@ aside{
     background-color:var(--bgForm-);
     overflow: hidden;
 } */
+
 section{
     border:2px solid var(--cinza-claro-);
     background-color: var(--bgForm-);
@@ -102,42 +106,8 @@ section{
     /* max-width: 40%; */
 }
 
-
-form{
-    padding: 10px;
-    max-width: 100%;
-}
-table{
-    width: 100%;
-}
-textarea{
-    width: 100%;
-    resize: none;
-}
-#moralidade{
-    display:flex;
-    justify-content: space-around;
-}
-td input{
-    width: 100%;
-}
-
-#btnForm{
-    display: flex;
-    min-width:50%;
-    justify-content: space-evenly;
-}
-/* #btnForm button{
-    flex:1;
-} */
-
-#corpo{
-    min-width:30%;
-    max-width: 100%;
-    background-image: url(../IMGs/imgRepositorio/1cYrMYF.gif);
-}
-
 /* style main */
+
 /* toggles */
 .menu,
 .subMenu{
@@ -146,7 +116,6 @@ td input{
 .ativo{
     display: block;
 }
-
 /* toggles */
 
 

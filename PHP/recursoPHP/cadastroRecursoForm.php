@@ -16,7 +16,7 @@
 </head>
 <body>
     <div class="form"id="recursoForm">
-        <form action=""  method="post">
+        <form action="" id="cadastroRecurso" method="post">
             <table>
                 <tbody>
                 <th colspan=2>
