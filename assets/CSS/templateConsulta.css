@@ -13,20 +13,23 @@
 } */
 
 #pesquisaIndividuos,
-#pesquisaMissao{
+#pesquisaMissao,
+#pesquisaRecursos{
     display: flex;
     justify-content: center;
     margin-top: 10px;
 }
 
 #tabelaIndividuos,
-#tabelaMissao{
+#tabelaMissao,
+#tabelaRecursos{
     border-bottom: 2px solid var(--cinza-claro-); 
     max-width: 90%;
 }
 #tabelaIndividuos td,
-#tabelaMissao td{
-    padding: 10px;
+#tabelaMissao td,
+#tabelaRecursos td{
+    padding: 0 10px;
 }
 
 #listaHabilidades{

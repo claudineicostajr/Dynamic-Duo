@@ -12,19 +12,15 @@
     <link rel="stylesheet" href="../assets/CSS/normalize.css/normalize.css">
     <link rel="shortcut icon" href="../assets/IMGs/icons/favicon-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../assets/CSS/templatePrincipal.css">
-    <title>Cadastro de Individuos</title>
+    <title>Cadastro de Recurso</title>
 </head>
 <body>
     <div class="form"id="recursoForm">
-<<<<<<< HEAD
         <form action="" id="cadastroRecurso" method="post">
-=======
-        <form action="cadastroRecurso.php"  method="post">
->>>>>>> 29376f533cedeadecd12873660f9619db0999a14
             <table>
                 <tbody>
                 <th colspan=2>
-                    Cadastro de arsenal
+                    Cadastro de recurso
                 </th>
                 <tr>
                     <td>

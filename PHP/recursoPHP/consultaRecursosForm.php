@@ -15,7 +15,7 @@
 </head>
 <body>
 <div id="pesquisaRecursos">
-    <input type="text" name="pesquisaRecursosInput" id="pesquisaRecursosInput" placeholder="Busca por missão">
+    <input type="text" name="pesquisaRecursosInput" id="pesquisaRecursosInput" placeholder="Busca por recurso">
     <button id="btnPesquisarRecursos" type="submit">Pesquisar</button>
 </div>
 <div id="tabelaResultadosRecursos">
@@ -23,7 +23,7 @@
         <tbody>
             <tr>
                 <td>
-                    Nome do Recurso
+                    Nome
                 </td>
                 <td>
                     Descrição do recurso
@@ -36,6 +36,9 @@
                 <td>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                 </td>
+                <td>
+                    excluir
+                </td>
             </tr>
         </tbody>
     </div> 
@@ -47,3 +50,5 @@
 <script src="../assets/JS/jquery-3.6.0.min.js"></script>
 <script src="../assets/JS/script.js"></script>
 </html>
+
+<!-- adicionar btn exlcuir -->

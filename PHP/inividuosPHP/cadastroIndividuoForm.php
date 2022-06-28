@@ -52,19 +52,8 @@
                         <input type="text" name="habilidades" id="">
                     </td>
                 </tr>
-                <!-- <tr>
+                <<tr>
                     <td>
-<<<<<<< HEAD
-=======
-                        <label for="">Email</label>
-                    </td>
-                    <td>
-                        <input type="email" name="email" id="">
-                    </td>
-                </tr> -->
-                <tr>
-                    <td>
->>>>>>> 29376f533cedeadecd12873660f9619db0999a14
                         <label for="">Moralidade</label>
                     </td>
                     <td id="moralidade">
