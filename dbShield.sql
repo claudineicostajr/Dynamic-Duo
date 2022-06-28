@@ -88,5 +88,5 @@ CREATE TABLE IF NOT EXISTS `dbShield`.`missoes_has_recursos` (
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
-
+ALTER TABLE `individuos` DROP `email`;
 
