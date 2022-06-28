@@ -41,7 +41,7 @@
                         <label for="">Data da missão</label>
                     </td>
                     <td>
-                        <input type="date" name="" id="">
+                        <input type="date" name="dataMissao" id="">
                     </td>
                 </tr>
                 <tr>
@@ -54,10 +54,10 @@
                 </tr>
                 <tr>
                     <td>
-                        <label for="">Agente</label>
+                        <label for="">Heroi</label>
                     </td>
                     <td>
-                        <select name="selecaoAgentes" id="selecaoAgentes">
+                        <select name="selecaoHerois" id="selecaoAgentes">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
@@ -68,7 +68,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <label for="">Inimigo</label>
+                        <label for="">Vilao</label>
                     </td>
                     <td>
                         <select name="selecaoInimigo" id="selecaoAgentes">

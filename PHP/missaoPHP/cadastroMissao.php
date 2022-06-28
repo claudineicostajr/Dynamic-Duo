@@ -3,18 +3,15 @@
 // require_once("../recursoPHP/conexaoBanco.php");
 
 
-$nome=$_POST['nome'];
-$descricao=$_POST['descricao'];
-$data=$_POST['data'];
-$local=$_POST['local'];
-$heroi=$_POST['heroi'];
-$vilao=$_POST['vilao'];
+$nome=$_POST['nomeMissao'];
+$descricao=$_POST['descricaoMissao'];
+$data=$_POST['dataMissao'];
+$local=$_POST['cep'];
+$heroi=$_POST['selecaoHerois'];
+$vilao=$_POST['selecaoInimigo'];
+$recursos=$_POST['selecaoRecursos'];
 
-
-// !! foto !!
-
-
-$comando="INSERT INTO missoes (nome, descricao, data, local, heroi, vilao) VALUES('".$nome."', '".$descricao."', '".$data."', '".$local."', '".$heroi."', '".$vilao."')";
+$comando="INSERT INTO missoes (nome, descricao, data, local, heroi, vilao) VALUES('".$nome."', '".$descricao."', '".$data."', '".$local."', '".$heroi."', '".$vilao."', '".$recursos."')";
 
 echo $comando;
 

@@ -2,7 +2,7 @@
 $local="localhost";
 $usuario="root";
 $senha="root";
-$banco="dbShield";
+$banco="dbshield";
 
 $conexao=mysqli_connect($local, $usuario, $senha, $banco);
 

@@ -49,17 +49,17 @@
                         <label for="">Habilidades</label>
                     </td>
                     <td>
-                        <input type="text" name="habilidade" id="">
+                        <input type="text" name="habilidades" id="">
                     </td>
                 </tr>
-                <tr>
+                <!-- <tr>
                     <td>
                         <label for="">Email</label>
                     </td>
                     <td>
                         <input type="email" name="email" id="">
                     </td>
-                </tr>
+                </tr> -->
                 <tr>
                     <td>
                         <label for="">Moralidade</label>
