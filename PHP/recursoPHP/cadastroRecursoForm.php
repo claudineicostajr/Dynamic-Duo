@@ -16,11 +16,7 @@
 </head>
 <body>
     <div class="form"id="recursoForm">
-<<<<<<< HEAD
-        <form action="" id="cadastroRecurso" method="post">
-=======
-        <form action="cadastroRecurso.php"  method="post">
->>>>>>> 29376f533cedeadecd12873660f9619db0999a14
+        <form action="cadastroRecurso.php" id="cadastroRecurso" method="post">
             <table>
                 <tbody>
                 <th colspan=2>
@@ -39,7 +35,7 @@
                         <label for="">Descrição</label>
                     </td>
                     <td>
-                        <input type="text" name="descricaoRecurso" id="">
+                        <input type="text" name="descricaoRecurso" id="descricaoRecurso">
                     </td>
                 </tr>
                 </tbody>
