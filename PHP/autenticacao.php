@@ -1,8 +1,8 @@
 <?php
 
-require_once("PHP/conexaoBanco.php");
+require_once("conexaoBanco.php");
 
-$usuario=$_POST['usuario'];
+$usuario=$_POST['nomeUsuario'];
 $senha=$_POST['senha'];
 
 //função md5() criptografia a senha no algoritmo MD5
