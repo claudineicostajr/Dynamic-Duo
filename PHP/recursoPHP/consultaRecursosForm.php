@@ -28,16 +28,19 @@
                 <td>
                     Descrição do recurso
                 </td>
+                <td>
+                    Excluir
+                </td>
             </tr>
             <tr>
                 <td>
                     Helicóptero
                 </td>
                 <td>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    pomba qui avua.
                 </td>
-                <td>
-                    excluir
+                <td>                        
+                    <img class="icone" src="assets/IMGs/icons/trash-bin.png" alt="">
                 </td>
             </tr>
         </tbody>
@@ -50,5 +53,3 @@
 <script src="../assets/JS/jquery-3.6.0.min.js"></script>
 <script src="../assets/JS/script.js"></script>
 </html>
-
-<!-- adicionar btn exlcuir -->

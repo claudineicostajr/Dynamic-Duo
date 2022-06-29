@@ -12,14 +12,14 @@
     <link rel="stylesheet" href="../assets/CSS/normalize.css/normalize.css">
     <link rel="shortcut icon" href="../assets/IMGs/icons/favicon-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../assets/CSS/templatePrincipal.css">
-    <title>Registro de Missão</title>
+    <title>Editar Requisitos da Missão</title>
 </head>
 <body>
     <div class="form">
     <form id="cadastrarMissao" action="cadastroMissao.php" method="post">
         <table>
             <tbody>
-                <th colspan=2>Requisitar missão</th>
+                <th colspan=2>Editar Requisitos</th>
                 <tr>
                     <td>
                         <label for="">Nome da Missão</label>
@@ -95,7 +95,7 @@
         <br><br>
         <div id="btnForm">
             <button type="reset">Limpar</button>
-            <button type="submit">Cadastrar</button>
+            <button type="submit">Salvar</button>
         </div>
     </form>
     </div>

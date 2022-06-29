@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/CSS/normalize.css/normalize.css">
     <link rel="shortcut icon" href="../assets/IMGs/icons/favicon-logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../assets/CSS/templateConsulta.css">
     <title>Consultas de Individuos</title>
 </head>
 <body>
@@ -24,7 +23,7 @@
         <tbody>
             <tr>
                 <td rowspan="2">  
-                    <img width="80" height="80" src="../../assets/IMGs/imgRepositorio/capitao-america(perfil).jpg" alt="">
+                    <img width="80" height="80" src="assets/IMGs/imgRepositorio/capitao-america(perfil).jpg" alt="">
                 </td>
                 <td>
                     Alterego
@@ -40,6 +39,9 @@
                 </td>
                 <td>
                     Moralidade
+                </td>
+                <td>
+                    Editar
                 </td>
             </tr>
             <tr>
@@ -63,7 +65,7 @@
                     Herói
                 </td>
                 <td>
-                    editar
+                    <img class="icone" id="btnEditarIndividuo" src="assets/IMGs/icons/pencil.png" alt="">
                 </td>
             </tr>
         </tbody>
@@ -73,7 +75,7 @@
 </div>
 
 </body>
-<script src="../assets/JS/jquery-3.6.0.min.js"></script>
-<script src="../assets/JS/script.js"></script>
+<script src="assets/JS/jquery-3.6.0.min.js"></script>
+<script src="assets/JS/script.js"></script>
 </html>
 

@@ -15,6 +15,7 @@ body{
     background-size: cover;
     font-family: 'Exo 2', sans-serif;
     color: var(--cinza-claro-);
+    zoom: 0.8;
 }
 /* style do body */
 /* style nav */
@@ -86,24 +87,16 @@ aside{
 #ladoDireito{
     flex:1;
 }
-
-#ladoEsquerdo{
-    /* display: flex; */
-    /* flex-direction: column; */
-}
-/* #ladoDireito{
-    display:flex;
-    justify-content: center;
-    height: 91vh;
-    background-color:var(--bgForm-);
-    overflow: hidden;
-} */
-
 section{
     border:2px solid var(--cinza-claro-);
     background-color: var(--bgForm-);
     border-bottom-right-radius: 20px;
-    /* max-width: 40%; */
+}
+
+.edicoesFlutuantes{
+    position: absolute;
+    top:400;
+    left:400;
 }
 
 /* style main */
@@ -113,9 +106,7 @@ section{
 .subMenu{
     display: none;
 }
-.ativo{
-    display: block;
-}
+
 /* toggles */
 
 

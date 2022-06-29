@@ -22,8 +22,17 @@
     <table id="tabelaMissao">
         <tbody>
             <tr>
-                <td colspan='4'>
+                <td>
                     Nome da Missão
+                </td>
+                <td>
+                    Relatório
+                </td>
+                <td>
+                    Editar
+                </td>
+                <td>
+                    Status
                 </td>
             </tr>
             <tr>
@@ -31,10 +40,10 @@
                     Salvar reféns do Dr Doom -
                 </td>
                 <td>
-                    PDF
+                    <img class="icone" id="btnEditarMissao" src="assets/IMGs/icons/pdf_icon.png" alt="">
                 </td>
                 <td >
-                    Editar
+                    <img class="icone" src="assets/IMGs/icons/pencil.png" alt="">
                 </td>
                 <td>
                     <div id="statusMissaoRadio">
