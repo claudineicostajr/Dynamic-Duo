@@ -6,5 +6,7 @@ $descricao=$_POST['descricaoRecurso'];
 
 $comando="INSERT INTO recursos (nome, descricao) VALUES ('".$nome."','".$descricao."')";
 
-echo $comando;
+// echo $comando;
+
+$resultado=mysqli_query($conexao, $comando);
 ?>

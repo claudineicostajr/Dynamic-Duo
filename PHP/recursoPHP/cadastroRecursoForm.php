@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="../assets/CSS/normalize.css/normalize.css">
     <link rel="shortcut icon" href="../assets/IMGs/icons/favicon-logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../assets/CSS/templatePrincipal.css">
-    <title>Cadastro de Individuos</title>
+    <title>Cadastro de Recurso</title>
 </head>
 <body>
     <div class="form"id="recursoForm">
@@ -20,7 +20,7 @@
             <table>
                 <tbody>
                 <th colspan=2>
-                    Cadastro de arsenal
+                    Cadastro de recurso
                 </th>
                 <tr>
                     <td>

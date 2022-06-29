@@ -62,6 +62,9 @@
                 <td>
                     Herói
                 </td>
+                <td>
+                    editar
+                </td>
             </tr>
         </tbody>
     </div> 
@@ -73,3 +76,4 @@
 <script src="../assets/JS/jquery-3.6.0.min.js"></script>
 <script src="../assets/JS/script.js"></script>
 </html>
+
