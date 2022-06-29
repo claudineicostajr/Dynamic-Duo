@@ -15,13 +15,21 @@
     <title>Página de Login</title>
 </head>
 <body>
+    <div id="alertas">
+        <?php if(isset($_GET['retorno'])==true && $_GET['retorno']==1){ ?>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <span>Usuário ou senha inválidos!</span>
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+        <?php } ?>
+    </div>
     <main id="conteudo">
         <form id="formLogin" action="" method="post">
             <h3>Login</h3>
             <div id="loginTopo">
                 <div id="divInput">
-                    <input type="text" name="loginUser" id="loginUser" placeholder="Usuário">
-                    <input type="password" name="senhaUser" id="senhaUser" placeholder="Senha">
+                    <input type="text" name="nomeUsuario" id="loginUser" placeholder="Usuário">
+                    <input type="password" name="senha" id="senhaUser" placeholder="Senha">
                 </div>
             </div>
             <div id="btnAcesso">
