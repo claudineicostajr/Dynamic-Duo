@@ -10,10 +10,15 @@ $(function(){
     $('#btnCadastrarInviduo').on('click',function(){
         $('#individuo').toggle('slow');
         $('#individuo').load('PHP/inividuosPHP/cadastroIndividuoForm.php');
+        $('#individuo').removeClass('menu');
+        $('#individuo').AddClass('ativo');
     })
+
     $('#btnConsultarInviduo').on('click',function(){
         $('#individuo').toggle('slow');
         $('#individuo').load('PHP/inividuosPHP/consultaInviduoForm.php');
+        $('#individuo').removeClass('menu');
+        $('#individuo').AddClass('ativo');
     })
     $('#btnCadastrarMissao').on('click',function(){
         $('#missao').toggle('slow');
@@ -38,6 +43,19 @@ $(function(){
         $('#editarIndividuo').load('PHP/inividuosPHP/editarIndividuoForm.php');
     })
 
+    //login
+    
+    $('#iconVerSenha').on('mousedown',function(){
+        $('#senhaUser').attr('type','text')
+        $('#iconVerSenha').css('background-color','#222')
+        $('#iconVerSenha').attr('src','assets/IMGs/icons/light_show_view_visible_icon.png')
+    });
+    $('#iconVerSenha').on('mouseup',function(){
+        $('#senhaUser').attr('type','password')
+        $('#iconVerSenha').css('background-color','#DDD')
+        $('#iconVerSenha').attr('src','assets/IMGs/icons/hide_invisible_private_icon.png')
+    });    
+    //login
 
     
 })

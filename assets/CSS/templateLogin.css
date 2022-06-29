@@ -47,6 +47,18 @@ form h3{
 form button{
     cursor: pointer;
 }
+#btnAcesso{
+    display: flex;
+    justify-content: space-evenly;
+}
+#iconVerSenha{
+    padding: 3px;
+    background-color: #DDD;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
 
 
 /* login */

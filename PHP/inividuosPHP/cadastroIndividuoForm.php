@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/CSS/normalize.css/normalize.css">
     <link rel="shortcut icon" href="../assets/IMGs/icons/favicon-logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../assets/CSS/templatePrincipal.css">
     <title>Cadastro de Individuos</title>
 </head>
 <body>
