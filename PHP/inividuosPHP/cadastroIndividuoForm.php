@@ -16,7 +16,7 @@
 </head>
 <body>
     <div class="form">
-        <form  id="cadastrarIndividuo" action="cadastroIndividuo.php" method="post">
+        <form  id="cadastrarIndividuo" action="cadastroIndividuo.php" method="post" enctype="multipart/form-data">
             <table>
                 <tbody>
                 <th colspan=2>Cadastro de indivíduo</th>
@@ -49,16 +49,17 @@
                         <label for="">Habilidades</label>
                     </td>
                     <td>
-                        <input type="text" name="habilidades" id="">
+                        <input type="text" name="habilidades" id="habilidades">
                     </td>
                 </tr>
-                <<tr>
+                
+                <tr>
                     <td>
                         <label for="">Moralidade</label>
                     </td>
                     <td id="moralidade">
-                        <input type="radio" name="moralidade" id="moralidade">Herói
-                        <input type="radio" name="moralidade" id="moralidade">Vilão
+                        <input type="radio" value="1" name="moralidade" id="moralidade">Herói
+                        <input type="radio"  value="2" name="moralidade" id="moralidade">Vilão
                     </td>
                 </tr>
                 <tr>

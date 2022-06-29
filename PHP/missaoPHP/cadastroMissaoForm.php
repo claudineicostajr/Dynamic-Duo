@@ -85,9 +85,20 @@
                         <label for="">Recursos</label>
                     </td>
                     <td>
-                        <input type="checkbox" name="selecaoRecursos" id="selecaoRecursos">
-                        <input type="checkbox" name="selecaoRecursos" id="selecaoRecursos">
-                        <input type="checkbox" name="selecaoRecursos" id="selecaoRecursos">
+                    <?php
+                            require_once("../conexaoBanco.php");
+                            $comando="SELECT * FROM recursos";
+                            $resultado=mysqli_query($conexao,$comando);
+                            $recursos=array();
+                            while($r = mysqli_fetch_assoc($resultado)){
+                                array_push($recursos, $r);
+                            }
+
+                            foreach($recursos as $r){
+                                echo "<input type='checkbox' value='".$r['idRecurso']."' name='selecaoRecursos[]' id='selecaoRecursos'>".$r["nome"];
+                            }
+
+                        ?>
                     </td>
                 </tr>
             </tbody>
