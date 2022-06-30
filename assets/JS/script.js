@@ -4,32 +4,16 @@ $(function(){
     $('#logo').on('click',function(){
         $('aside').toggle('slow');
     })
-    
-    
 
-    
+
+
     $('#btnCadastrarInviduo').on('click',function(){
-
-        if($('#individuo').hasClass('menu')){
-            // $('#individuo').removeClass('menu');
-            $('#individuo').show('slow');
-            $('#individuo').load('PHP/inividuosPHP/cadastroIndividuoForm.php');
-        }else{
-            $('#individuo').hide('slow');
-            $('#individuo').addClass('menu');
-        }
+        $('#individuo').toggle('slow');
+        $('#individuo').load('PHP/inividuosPHP/cadastroIndividuoForm.php');
     })
-
     $('#btnConsultarInviduo').on('click',function(){
-
-        if($('#individuo2').hasClass('menu')){
-            $('#individuo2').removeClass('menu');
-            $('#individuo2').show('slow');
-            $('#individuo2').load('PHP/inividuosPHP/consultaInviduoForm.php');
-        }else{
-            $('#individuo2').hide('slow');
-            $('#individuo2').addClass('menu');
-    }
+        $('#individuo').toggle('slow');
+        $('#individuo').load('PHP/inividuosPHP/consultaInviduoForm.php');
     })
 
 
