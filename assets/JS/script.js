@@ -6,20 +6,33 @@ $(function(){
     })
     
     
+
     
     $('#btnCadastrarInviduo').on('click',function(){
-        $('#individuo').toggle('slow');
-        $('#individuo').load('PHP/inividuosPHP/cadastroIndividuoForm.php');
-        $('#individuo').removeClass('menu');
-        $('#individuo').AddClass('ativo');
+
+        if($('#individuo').hasClass('menu')){
+            // $('#individuo').removeClass('menu');
+            $('#individuo').show('slow');
+            $('#individuo').load('PHP/inividuosPHP/cadastroIndividuoForm.php');
+        }else{
+            $('#individuo').hide('slow');
+            $('#individuo').addClass('menu');
+        }
     })
 
     $('#btnConsultarInviduo').on('click',function(){
-        $('#individuo').toggle('slow');
-        $('#individuo').load('PHP/inividuosPHP/consultaInviduoForm.php');
-        $('#individuo').removeClass('menu');
-        $('#individuo').AddClass('ativo');
+
+        if($('#individuo2').hasClass('menu')){
+            $('#individuo2').removeClass('menu');
+            $('#individuo2').show('slow');
+            $('#individuo2').load('PHP/inividuosPHP/consultaInviduoForm.php');
+        }else{
+            $('#individuo2').hide('slow');
+            $('#individuo2').addClass('menu');
+    }
     })
+
+
     $('#btnCadastrarMissao').on('click',function(){
         $('#missao').toggle('slow');
         $('#missao').load('PHP/missaoPHP/cadastroMissaoForm.php');
