@@ -2,25 +2,25 @@
 
 require_once("conexaoBanco.php");
 
-$usuario=$_POST['nomeUsuario'];
+$nomeUsuario=$_POST['nomeUsuario'];
 $senha=$_POST['senha'];
 
 //função md5() criptografia a senha no algoritmo MD5
-$senhaMD5=md5($senha);
-$comando="SELECT * FROM usuarios WHERE email='".$email."' AND senha='".$senhaMD5."'";
+// $senhaMD5=md5($senha);
+$comando="SELECT * FROM usuarios WHERE nomeUsuario='".$nomeUsuario."' AND senha='".$senha."'";
+// echo $comando;
 
-$resultado=mysqli($conexao, $comando);
+$resultado=mysqli_query($conexao, $comando);
+$linhas=mysqli_num_rows($resultado);
 
-$linhas=mysqli_query($resultado);
-
-if(){
-    header("Location: ")
+if($linhas==0){
+    header("Location: ../index.htmlerro");
 }else{
     $usuario=mysqli_fetch_assoc($resultado);
-        if(){
-            header ("Location: ");
-        } else {
-            header ("Location: ");
+        if($usuario['nivel']=='1'){
+            header ("Location: agentes.php");
+        } else{
+            header ("Location: executor.php");
         }
 }
-?>
+?> 
