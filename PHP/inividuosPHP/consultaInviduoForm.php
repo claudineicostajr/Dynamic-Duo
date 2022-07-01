@@ -1,3 +1,10 @@
+
+
+
+<!-- INCOMPLETO !!! -->
+
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -94,19 +101,17 @@
 					echo "<td>".$c['nome']."</td>";
 					echo "<td>".$c['afiliacao']."</td>";
 					echo "<td>".$c['habilidades']."</td>";
-					echo "<td>".$c['moralidade']."</td>";					
-					echo "<td> Santa Catarina</td>";
-					echo "<td>".$c['numero']."</td>";				
+					echo "<td>".$c['moralidade']."</td>";							
 			?>
         </tbody>
-    </div> 
+        </div> 
     </table>
     <br>
-</div>
-?php 
-						} //fechamwnto do foreach
-					} //fechamento do else
-				?>
+        </div>
+        ?php 
+            } //fechamwnto do foreach
+            } //fechamento do else
+        ?>
 </body>
 <script src="assets/JS/jquery-3.6.0.min.js"></script>
 <script src="assets/JS/script.js"></script>
