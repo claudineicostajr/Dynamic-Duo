@@ -8,12 +8,12 @@ $(function(){
 
 
     $('#btnCadastrarInviduo').on('click',function(){
-        $('#individuo').toggle('slow');
         $('#individuo').load('PHP/inividuosPHP/cadastroIndividuoForm.php');
+        $('#individuo').toggle('slow');
     })
     $('#btnConsultarInviduo').on('click',function(){
-        $('#individuo').toggle('slow');
         $('#individuo').load('PHP/inividuosPHP/consultaInviduoForm.php');
+        $('#individuo').toggle('slow');
     })
 
 
