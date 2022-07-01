@@ -9,35 +9,35 @@ $(function(){
 
     $('#btnCadastrarInviduo').on('click',function(){
         $('#individuo').load('PHP/inividuosPHP/cadastroIndividuoForm.php');
-        $('#individuo').slideToggle('slow');
+        $('#individuo').toggle('slow');
     })
     $('#btnConsultarInviduo').on('click',function(){
         $('#individuo').load('PHP/inividuosPHP/consultaInviduoForm.php');
-        $('#individuo').slideToggle('slow');
+        $('#individuo').toggle('slow');
     })
 
 
     $('#btnCadastrarMissao').on('click',function(){
-        $('#missao').slideToggle('slow');
+        $('#missao').toggle('slow');
         $('#missao').load('PHP/missaoPHP/cadastroMissaoForm.php');
     })
     $('#btnConsultarMissao').on('click',function(){
-        $('#missao').slideToggle('slow');
+        $('#missao').toggle('slow');
         $('#missao').load('PHP/missaoPHP/consultaMissaoForm.php');
     })
     $('#btnCadastrarRecursos').on('click',function(){
-        $('#recursos').slideToggle('slow');
+        $('#recursos').toggle('slow');
         $('#recursos').load('PHP/recursoPHP/cadastroRecursoForm.php');
     })    
 
     $('#btnConsultarRecursos').on('click',function(){
-        $('#recursos').slideToggle('slow');
+        $('#recursos').toggle('slow');
         $('#recursos').load('PHP/recursoPHP/consultaRecursosForm.php');
     })
 
     $('#btnEditarIndividuo').on('click',function(){
-        $('#editarIndividuo').slideToggle('slow');
-        $('#editarIndividuo').slideToggle('PHP/inividuosPHP/editarIndividuoForm.php');
+        $('#editarIndividuo').toggle('slow');
+        $('#editarIndividuo').load('PHP/inividuosPHP/editarIndividuoForm.php');
     })
 
     //login
