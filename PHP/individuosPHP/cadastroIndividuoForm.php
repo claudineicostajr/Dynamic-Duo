@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="form">
-        <form  id="cadastrarIndividuo" action="cadastroIndividuo.php" method="post" enctype="multipart/form-data">
+        <form  id="cadastrarIndividuo" action="PHP/individuosPHP/cadastroIndividuo.php" method="post" enctype="multipart/form-data">
             <table>
                 <tbody>
                 <th colspan=2>Cadastro de indivíduo</th>

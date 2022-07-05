@@ -12,12 +12,15 @@
     <title>Consulta de recursos</title>
 </head>
 <body>
-<div id="pesquisaRecursos">
-    <input type="text" name="pesquisaRecursosInput" id="pesquisaRecursosInput" placeholder="Busca por recurso">
-    <button id="btnPesquisarRecursos" type="submit">Pesquisar</button>
-</div>
+    <form action="#" method="GET">
+        <div id="pesquisaRecursos">
+            <input type="text" name="pesquisa" id="pesquisaRecursosInput" placeholder="Busca por recurso">
+            <button id="btnPesquisarRecursos" type="submit">Pesquisar</button>
+        </div>
+    </form>
+    
 <div id="tabelaResultadosRecursos">
-    <table id="tabelaRecursos">
+    <table border="1" id="tabelaRecursos">
         <tbody>
             <tr>
                 <td>
@@ -30,17 +33,45 @@
                     Excluir
                 </td>
             </tr>
-            <tr>
+            
+            <?php
+                require_once("../conexaoBanco.php");
+                $comando="SELECT * FROM recursos";
+
+                if(isset($_GET['pesquisa']) && $_GET['pesquisa']!=""){
+                    $pesquisa=$_GET['pesquisa'];
+                    $comando.= " WHERE nome like '".$pesquisa."%' OR descricao LIKE '".$pesquisa."%'";
+                }
+                //echo $comando;
+                $resultado=mysqli_query($conexao,$comando);
+                $recursos=array();
+                $linhas=mysqli_num_rows($resultado);
+                
+                if($linhas==0){
+                    echo "<tr><td colspan='3'>Nenhum recurso encontrado!</td></tr>";
+                }else{		
+
+                while($r = mysqli_fetch_assoc($resultado)){
+                    array_push($recursos, $r);
+                }
+
+                foreach($recursos as $r){
+                    echo "<tr>";
+                    echo "<td>".$r['nome']."</td>";
+                    echo "<td>".$r['descricao']."</td>";
+            ?> 
                 <td>
-                    Helicóptero
+                <!-- formulário de exclusão ediçao -->
                 </td>
-                <td>
-                    pomba qui avua.
-                </td>
-                <td>                        
-                    <img class="icone" src="assets/IMGs/icons/trash-bin.png" alt="">
-                </td>
-            </tr>
+                </tr>
+
+            <?php
+                }	
+            }		
+            ?>              
+            
+                
+         
         </tbody>
     </div> 
     </table>

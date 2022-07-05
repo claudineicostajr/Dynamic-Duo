@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="form">
-    <form id="cadastrarMissao" action="cadastroMissao.php" method="post">
+    <form id="cadastrarMissao" action="PHP/missaoPHP/cadastroMissao.php" method="post">
         <table>
             <tbody>
                 <th colspan=2>Requisitar missão</th>

@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="form"id="recursoForm">
-        <form action="cadastroRecurso.php" id="cadastroRecurso" method="post">
+        <form action="PHP/recursoPHP/cadastroRecurso.php" id="cadastroRecurso" method="post">
             <table>
                 <tbody>
                 <th colspan=2>

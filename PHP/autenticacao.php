@@ -18,9 +18,9 @@ if($linhas==0){
 }else{
     $usuario=mysqli_fetch_assoc($resultado);
         if($usuario['nivel']=='1'){
-            header ("Location: agentes.php");
+            header ("Location: ../index.html");
         } else{
-            header ("Location: executor.php");
+            header ("Location: agentes.php ");
         }
 }
 ?> 
