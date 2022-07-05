@@ -26,18 +26,7 @@
                 <td>
                     Alterego
                 </td>
-                <td>
-                    Nome
-                </td>
-                <td>
-                    Afiliação
-                </td>
-                <td>
-                    Habilidades
-                </td>
-                <td>
-                    Moralidade
-                </td>
+   
                 <td>
                     Editar
                 </td>
@@ -47,26 +36,11 @@
                     Capitão América
                 </td>
                 <td>
-                    Steve Rogers
-                </td>
-                <td>
-                    Vingadores
-                </td>
-                <td>
-                    <ul id="listaHabilidades">
-                        <li>Força</li>
-                        <li>Velocidade</li>
-                        <li>Vigor</li>
-                    </ul>
-                </td>
-                <td>
-                    Herói
-                </td>
-                <td>
                     <img class="icone" id="btnEditarIndividuo" src="assets/IMGs/icons/pencil.png" alt="">
                 </td>
             </tr>
             <?php
+            /*
 				require_once("../conexaoBanco.php");
 				$comando="SELECT c.*, t.alterego FROM individuos";
 
@@ -94,17 +68,17 @@
 					echo "<td>".$c['habilidades']."</td>";
 					echo "<td>".$c['moralidade']."</td>";					
 					echo "<td> Santa Catarina</td>";
-					echo "<td>".$c['numero']."</td>";				
-			?>
-        </tbody>
-    </div> 
-    </table>
-    <br>
-</div>
-?php 
+					echo "<td>".$c['numero']."</td>";
+                    
 						} //fechamwnto do foreach
 					} //fechamento do else
-				?>
+                    
+                    */				
+			?>
+        </tbody>
+    </table>
+    <br>
+</div> 
 </body>
 <script src="assets/JS/jquery-3.6.0.min.js"></script>
 <script src="assets/JS/script.js"></script>

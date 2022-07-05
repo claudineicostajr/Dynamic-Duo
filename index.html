@@ -34,10 +34,10 @@
                         Indivíduos
                     </h3>
                         <div id="subMenuIndividuo">
-                            <li id="btnCadastrarInviduo" disabled="disabled">
+                            <li id="btnCadastrarInviduo" onclick="callCadastroIndividuo()">
                                 Cadastro
                             </li>
-                            <li id="btnConsultarInviduo">
+                            <li id="btnConsultarInviduo" onclick="callConsultaIndividuo()">
                                 Consulta
                             </li>
                         </div>
@@ -47,10 +47,10 @@
                         Missões
                     </h3>
                         <div id="subMenuMissao">
-                            <li id="btnCadastrarMissao">
+                            <li id="btnCadastrarMissao" onclick="callCadastroMissao()">
                                 Cadastro
                             </li>
-                            <li id="btnConsultarMissao">
+                            <li id="btnConsultarMissao" onclick="callConsultaMissao()">
                                 Consulta
                             </li>
                         </div>
@@ -60,10 +60,10 @@
                         Recursos
                     </h3>
                         <div id="subMenuRecursos">
-                            <li id="btnCadastrarRecursos">
+                            <li id="btnCadastrarRecursos" onclick="callCadastroRecurso()">
                                 Cadastro
                             </li>
-                            <li id="btnConsultarRecursos">
+                            <li id="btnConsultarRecursos" onclick="callConsultaRecurso()">
                                 Consulta
                             </li>
                         </div>
@@ -72,6 +72,7 @@
         </aside>
         <div id="ladoEsquerdo">
             <section id="individuo" class="menu"></section>
+            <section id="individuo2" class="menu"></section>
             <section id="missao" class="menu"></section>
             <section id="recursos" class="menu"></section>
         </div>
