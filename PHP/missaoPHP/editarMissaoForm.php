@@ -16,7 +16,7 @@
     <form id="cadastrarMissao" action="cadastroMissao.php" method="post">
         <table>
             <tbody>
-                <th colspan=2>Editar Requisitos</th>
+                <th colspan=2>Editar Requisitos da Missão</th>
                 <tr>
                     <td>
                         <label for="">Nome da Missão</label>

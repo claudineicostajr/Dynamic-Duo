@@ -37,7 +37,7 @@
                     Capitão América
                 </td>
                 <td>
-                    <img class="icone" id="btnEditarIndividuo" src="assets/IMGs/icons/pencil.png" alt="">
+                    <img class="icone" id="btnEditarIndividuo" onclick="callEditarIndividuo()" src="assets/IMGs/icons/pencil.png" alt="">
                 </td>
             </tr>
             <?php

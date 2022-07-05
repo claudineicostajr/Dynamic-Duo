@@ -1,40 +1,42 @@
+//individuos
 function callCadastroIndividuo(){
     $('#individuo').toggle('slow');
-    $('#individuo').removeClass('menu');
-    $('#individuo').addClass('ativo');
-    $('#individuo').load('PHP/inividuosPHP/cadastroIndividuoForm.php');
+    $('#individuo').load('PHP/individuosPHP/cadastroIndividuoForm.php');
 }
 function callConsultaIndividuo(){
     $('#individuo').toggle('slow');
-    $('#individuo').removeClass('menu');
-    $('#individuo').addClass('ativo');
-    $('#individuo').load('PHP/inividuosPHP/consultaInviduoForm.php');
+    $('#individuo').load('PHP/individuosPHP/consultaInviduoForm.php');
 }
+function callEditarIndividuo(){
+    $('#editarIndividuo').toggle('slow');
+    $('#editarIndividuo').load('PHP/individuosPHP/editarIndividuoForm.php');
+}
+
+//individuos
+//missão
 function callCadastroMissao(){
     $('#missao').toggle('slow');
-    $('#missao').removeClass('menu');
-    $('#missao').addClass('ativo');
     $('#missao').load('PHP/missaoPHP/cadastroMissaoForm.php');
 }
 function callConsultaMissao(){
     $('#missao').toggle('slow');
-    $('#missao').removeClass('menu');
-    $('#missao').addClass('ativo');
     $('#missao').load('PHP/missaoPHP/consultaMissaoForm.php');
 }
-
+function callEditarMissao(){
+    $('#editarMissao').toggle('slow');
+    $('#editarMissao').load('PHP/missaoPHP/editarMissaoForm.php');
+}
+//missão
+//recursos
 function callCadastroRecurso(){
     $('#recursos').toggle('slow');
-    $('#recursos').removeClass('menu');
-    $('#recursos').addClass('ativo');
     $('#recursos').load('PHP/recursoPHP/cadastroRecursoForm.php');
 }
 function callConsultaRecurso(){
     $('#recursos').toggle('slow');
-    $('#recursos').removeClass('menu');
-    $('#recursos').addClass('ativo');
     $('#recursos').load('PHP/recursoPHP/consultaRecursosForm.php');
 }
+//recursos
 
 //jQuery
 $(function(){
