@@ -5,10 +5,10 @@ function callCadastroIndividuo(){
     $('#individuo').load('PHP/inividuosPHP/cadastroIndividuoForm.php');
 }
 function callConsultaIndividuo(){
-        $('#individuo').toggle('slow');
-        $('#individuo').removeClass('menu');
-        $('#individuo').addClass('ativo');
-        $('#individuo').load('PHP/inividuosPHP/consultaInviduoForm.php');
+    $('#individuo').toggle('slow');
+    $('#individuo').removeClass('menu');
+    $('#individuo').addClass('ativo');
+    $('#individuo').load('PHP/inividuosPHP/consultaInviduoForm.php');
 }
 function callCadastroMissao(){
     $('#missao').toggle('slow');
