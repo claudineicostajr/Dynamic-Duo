@@ -30,6 +30,18 @@
                 echo "<script>
                 alert ('Recurso excluido com sucesso!');
                 </script>";
+            }else if($retorno=='3'){
+                echo "<script>
+                alert ('Exclusao do recurso falhou!');
+                </script>";
+            }else if($retorno=='4'){
+                echo "<script>
+                alert ('Recurso cadastrado com sucesso!');
+                </script>";
+            }else if($retorno=='5'){
+                echo "<script>
+                alert ('Cadastro do recurso falhou!');
+                </script>";
             }else{
                 echo "<script>
                 alert ('Exclusao do recurso falhou!');
