@@ -22,7 +22,7 @@
         <tbody>
              <tr>
                 <td rowspan="2">  
-                    <img class="selecaoPerfil" onclick="callPerfil()" width="80" height="80" src="assets/IMGs/bancoImagens/perfil2022.07.05-02.39.39.jpg" alt="">
+                    <img class="selecaoPerfil" onclick="callPerfil(this.src)" width="80" height="80" src="assets/IMGs/bancoImagens/perfil2022.07.05-02.39.39.jpg" alt="">
                 </td>
                 <td>
                     Alterego
@@ -42,7 +42,7 @@
             </tr>
             <tr>
                 <td rowspan="2">  
-                    <img class="selecaoPerfil" onclick="callPerfil()" width="80" height="80" src="assets/IMGs/bancoImagens/perfil2022.06.29-02.49.30.jpg" alt="">
+                    <img class="selecaoPerfil" onclick="callPerfil(this.src)" width="80" height="80" src="assets/IMGs/bancoImagens/perfil2022.06.29-02.49.30.jpg" alt="">
                 </td>
                 <td>
                     Alterego
