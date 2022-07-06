@@ -101,12 +101,9 @@
         </div>
         <div id="middle"></div>
         <div id="ladoDireito">
-            <!-- <div id="ladoDireitoImg">
-                <figure>
-                    <img id="corpo" src="assets/IMGs/imgRepositorio/green-goblin.png" alt="">
-                </figure>
-            </div> -->
-            <!-- <section id="edicoes"></section> -->
+            <figure>
+                <img id="corpo" src="" alt="">
+            </figure>
         </div>
     </main>
 </body>
