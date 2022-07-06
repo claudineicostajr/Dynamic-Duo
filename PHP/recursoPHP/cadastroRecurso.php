@@ -9,4 +9,5 @@ $comando="INSERT INTO recursos (nome, descricao) VALUES ('".$nome."','".$descric
 // echo $comando;
 
 $resultado=mysqli_query($conexao, $comando);
+
 ?>
