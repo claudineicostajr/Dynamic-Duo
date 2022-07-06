@@ -30,4 +30,10 @@ $comando="INSERT INTO individuos (alterego, nome, afiliacao, habilidades, morali
 
 $resultado=mysqli_query($conexao, $comando);
 
+if ($resultado==true){
+    header("Location: ../../index.php?retorno=6");
+}else{
+    header("Location ../../index.php?retorno=7");
+}
+
 ?>

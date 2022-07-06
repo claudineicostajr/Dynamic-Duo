@@ -30,8 +30,11 @@ $comando="INSERT INTO missoes (nome, descricao, data, local, heroi, vilao, statu
     $resultado=mysqli_query($conexao, $comando);
  }    
     
-
-    // $resultado=mysqli_query($conexao, $comando);
+ if ($resultado==true){
+   header("Location: ../../index.php?retorno=8");
+}else{
+   header("Location ../../index.php?retorno=9");
+}
 
   
 ?>

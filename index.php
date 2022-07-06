@@ -42,6 +42,22 @@
                 echo "<script>
                 alert ('Cadastro do recurso falhou!');
                 </script>";
+            }else if($retorno=='6'){
+                echo "<script>
+                alert ('Individuo cadastrado com sucesso!');
+                </script>";
+            }else if($retorno=='7'){
+                echo "<script>
+                alert ('Cadastro do individuo falhou!');
+                </script>";
+            }else if($retorno=='8'){
+                echo "<script>
+                alert ('Missão cadastrada com sucesso!');
+                </script>";
+            }else if($retorno=='9'){
+                echo "<script>
+                alert ('Cadastro da missão falhou!');
+                </script>";
             }else{
                 echo "<script>
                 alert ('Exclusao do recurso falhou!');
