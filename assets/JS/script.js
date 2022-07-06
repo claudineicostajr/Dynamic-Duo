@@ -12,6 +12,19 @@ function callEditarIndividuo(){
     $('#editarIndividuo').load('PHP/individuosPHP/editarIndividuoForm.php');
 }
 
+function callPerfil(){
+    $('img#corpo').attr('src','');
+    var teste = $('img#corpo').attr('src');
+    console.log(teste)
+    var captura='';
+    captura = $('img.selecaoPerfil').attr('src');
+    var estagio1 = captura.replace('perfil','corpo');
+    var  estagio2 = estagio1.replace('.jpg','.png');
+    // console.log(captura);
+    // console.log(estagio2); 
+    $('img#corpo').attr('src',estagio2);
+}
+
 //individuos
 //missão
 function callCadastroMissao(){
@@ -59,7 +72,5 @@ $(function(){
         $('#iconVerSenha').css('background-color','#DDD')
         $('#iconVerSenha').attr('src','assets/IMGs/icons/hide_invisible_private_icon.png')
     });    
-    //login
-
-    
+    //login    
 });
