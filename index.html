@@ -18,12 +18,33 @@
     <title>Página de Gerenciamento</title>
 </head>
 <body>
+
+    <?php
+        if(isset($_GET['retorno'])==true){
+            $retorno=$_GET['retorno'];
+            if($retorno=='1'){
+                echo "<script>
+                alert ('Impossivel realizar exclusão, pois ha missoes vinculadas!');
+                </script>";
+            }else if($retorno=='2'){
+                echo "<script>
+                alert ('Recurso excluido com sucesso!');
+                </script>";
+            }else{
+                echo "<script>
+                alert ('Exclusao do recurso falhou!');
+                </script>";
+            }
+        }
+    ?>
+
     <nav>
         <figure>
             <img id="logo" src="assets/IMGs/imgRepositorio/logo-shield.png" alt="">
         </figure>
         <ul id="logout">
-            <li>Logout</li>
+            <li>  <a href="PHP/efetuarLogout.php">Logout</a> </li>
+           
         </ul>
     </nav>
     <main id="conteudo">

@@ -12,27 +12,7 @@
     <title>Consulta de recursos</title>
 </head>
 <body>
-        <?php if(isset($_GET['retorno'])==true && $_GET['retorno']==0){ ?>
-        <div class="alert alert-warning alert-dismissible fade show" role="alert">
-            <span>Recurso irá ser usado em alguma missao, não pode ser excluido!</span>
-            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-        </div>
-        <?php }else if(isset($_GET['retorno'])==true && $_GET['retorno']==1){ ?>
-        <div class="alert alert-success alert-dismissible fade show" role="alert">
-            <span>Recurso cadastrado com sucesso!</span>
-            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-        </div>
-        <?php }else if(isset($_GET['retorno'])==true && $_GET['retorno']==2){ ?>
-        <div class="alert alert-success alert-dismissible fade show" role="alert">
-            <span>Recurso exluído com sucesso!</span>
-            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-        </div>
-        <?php }else if(isset($_GET['retorno'])==true && $_GET['retorno']==3){ ?>
-        <div class="alert alert-success alert-dismissible fade show" role="alert">
-            <span>Falha ao excluir!</span>
-            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-        </div>
-        <?php } ?>
+    
         
     <form action="#" method="GET">
         <div id="pesquisaRecursos">
