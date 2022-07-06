@@ -63,7 +63,7 @@
                     echo "<td>".$r['descricao']."</td>";
             ?> 
                 <td>
-                <form action="excluirRecurso.php" method="POST" class="formAcao">
+                <form action="PHP/recursoPHP/excluirRecurso.php" method="POST" class="formAcao">
 					<input type="hidden" name="idRecurso" value="<?=$r['idRecurso']?>">
 					<button type="submit" class="botaoAcao">
 						<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">

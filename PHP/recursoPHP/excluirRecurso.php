@@ -12,14 +12,14 @@ $idRecurso=$_POST['idRecurso'];
     $linhas=mysqli_num_rows($resultadoRecursos);
 
     if($linhas>0){
-        header("Location: index.php?retorno=1");
+        header("Location: ../../index.php?retorno=1");
     }else{
         $comando = "DELETE FROM recursos WHERE idRecurso=".$idRecurso;
         $resultado=mysqli_query($conexao, $comando);
         if($resultado==true){
-            header("Location: index.php?retorno=2");
+            header("Location: ../../index.php?retorno=2");
         }else{
-            header("location: index.php?retorno=3");
+            header("location: ../../index.php?retorno=3");
         }
     }
 
