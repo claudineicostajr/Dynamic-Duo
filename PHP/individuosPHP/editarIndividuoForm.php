@@ -74,7 +74,6 @@
                         <input type="file" name="imgCorpo" id="imgCorpo">
                     </td>
                 </tr>
-
                 </tbody>
             </table>
             <br><br>
