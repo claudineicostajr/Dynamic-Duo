@@ -63,7 +63,7 @@
 
             <tr>                
                 <td>
-                    <img class="icone" src="assets/IMGs/icons/pdf_icon.png" alt="">
+                    <img class="icone" action="PHP/gerarPDF.php" src="assets/IMGs/icons/pdf_icon.png" alt="">
                 </td>
                 <td >
                     <img class="icone" id="btnEditarMissao" onclick="callEditarMissao()" src="assets/IMGs/icons/pencil.png" alt="">

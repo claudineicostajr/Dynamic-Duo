@@ -127,7 +127,6 @@
             <section id="recursos" class="menu"></section>
             <section id="editarRecurso" class="menu"></section>
         </div>
-        <div id="middle"></div>
         <div id="ladoDireito">
             <figure>
                 <img id="corpo" src="" alt="">
