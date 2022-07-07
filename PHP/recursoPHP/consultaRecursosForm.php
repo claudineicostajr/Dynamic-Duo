@@ -53,14 +53,15 @@
                     echo "<tr><td colspan='3'>Nenhum recurso encontrado!</td></tr>";
                 }else{		
 
-                while($r = mysqli_fetch_assoc($resultado)){
-                    array_push($recursos, $r);
-                }
+                    while($r = mysqli_fetch_assoc($resultado)){
+                        array_push($recursos, $r);
+                    }
 
-                foreach($recursos as $r){
-                    echo "<tr>";
-                    echo "<td>".$r['nome']."</td>";
-                    echo "<td>".$r['descricao']."</td>";
+                    foreach($recursos as $r){
+                        echo "<tr>";
+                        echo "<td>".$r['nome']."</td>";
+                        echo "<td>".$r['descricao']."</td>";
+                    
             ?> 
                 <td>
                 <form action="PHP/recursoPHP/excluirRecurso.php" method="POST" class="formAcao">

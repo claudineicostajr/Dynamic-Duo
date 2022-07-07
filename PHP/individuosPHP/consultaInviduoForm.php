@@ -14,89 +14,61 @@
 </head>
 <body>
 <div id="pesquisaIndividuos">
-    <input type="text" name="pesquisarIndividuosInput" id="pesquisarIndividuosInput" placeholder="Busca por indivíduos">
+    <input type="text" name="pesquisa" id="pesquisarIndividuosInput" placeholder="Busca por indivíduos">
     <button id="btnPesquisarIndividuos" type="submit">Pesquisar</button>
 </div>
 <div id="tabelaResultadosIndividuos">
     <table id="tabelaIndividuos">
         <tbody>
              <tr>
-                <td rowspan="2">  
-                    <img class="selecaoPerfil" onclick="callPerfil(this.src)" width="80" height="80" src="assets/IMGs/bancoImagens/perfil2022.07.05-02.39.39.jpg" alt="">
-                </td>
+                <td>
+                    Foto de Perfil
+                </td> 
                 <td>
                     Alterego
                 </td>
-   
                 <td>
                     Editar
                 </td>
             </tr>
-            <tr>
-                <td>
-                    Ultron
-                </td>
-                <td>
-                    <img class="icone" id="btnEditarIndividuo" onclick="callEditarIndividuo()" src="assets/IMGs/icons/pencil.png" alt="">
-                </td>
-            </tr>
-            <tr>
-                <td rowspan="2">  
-                    <img class="selecaoPerfil" onclick="callPerfil(this.src)" width="80" height="80" src="assets/IMGs/bancoImagens/perfil2022.06.29-02.49.30.jpg" alt="">
-                </td>
-                <td>
-                    Alterego
-                </td>
-   
-                <td>
-                    Editar
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Hulk
-                </td>
-                <td>
-                    <img class="icone" id="btnEditarIndividuo" onclick="callEditarIndividuo()" src="assets/IMGs/icons/pencil.png" alt="">
-                </td>
-            </tr>
+            
    
             <?php
-            /*
-				require_once("../conexaoBanco.php");
-				$comando="SELECT c.*, t.alterego FROM individuos";
+                require_once("../conexaoBanco.php");
+                $comando="SELECT * FROM individuos";
 
-				if(isset($_GET['pesquisa']) && $_GET['pesquisa']!=""){
-					$comando.=" WHERE c.alterego LIKE '".$_GET['pesquisa']."%' OR c.local LIKE '".$_GET['pesquisa']."%' OR t.alterego LIKE '".$_GET['pesquisa']."%'";
-				}
-				//echo $comando;
-				$resultado=mysqli_query($conexao,$comando);
-				$individuos=array();
-				$linhas=mysqli_num_rows($resultado);
-				
-				if($linhas==0){
-					echo "<tr><td colspan='12'>Nenhum compromisso encontrado!</td></tr>";
-				}else{		
+                if(isset($_GET['pesquisa']) && $_GET['pesquisa']!=""){
+                    $pesquisa=$_GET['pesquisa'];
+                    $comando.= " WHERE alterego like '".$pesquisa."%'";
+                }
+                //echo $comando;
+                $resultado=mysqli_query($conexao,$comando);
+                $individuos=array();
+                $linhas=mysqli_num_rows($resultado);
+                
+                if($linhas==0){
+                    echo "<tr><td colspan='2'>Nenhum individuo encontrado!</td></tr>";
+                }else{		
 
-				while($c = mysqli_fetch_assoc($resultado)){
-					array_push($individuos, $c);
-				}
+                    while($i = mysqli_fetch_assoc($resultado)){
+                        array_push($individuos, $i);
+                    }
 
-				foreach($individuos as $c){
-                    echo "<td>".$c['imagemPerfil']."</td>";
-					echo "<td>".$c['alterego']."</td>";
-					echo "<td>".$c['nome']."</td>";
-					echo "<td>".$c['afiliacao']."</td>";
-					echo "<td>".$c['habilidades']."</td>";
-					echo "<td>".$c['moralidade']."</td>";					
-					echo "<td> Santa Catarina</td>";
-					echo "<td>".$c['numero']."</td>";
-                    
-						} //fechamwnto do foreach
-					} //fechamento do else
-                    
-                    */				
-			?>
+                    foreach($individuos as $i){
+                        echo "<tr>";
+                        echo "<td> <img class='selecaoPerfil' src='assets/IMGs/bancoImagens/".$i['imagemPerfil']."'> </td>";                   
+                        echo "<td>".$i['alterego']."</td>";                   
+            ?> 
+                    <!-- form editar -->
+                    <form action="">
+                        <td>
+                            <img class="icone" id="btnEditarIndividuo" onclick="callEditarIndividuo()" src="assets/IMGs/icons/pencil.png" alt="">
+                        </td>
+                    </form>
+            <?php
+                    }
+                }
+                ?>
         </tbody>
     </table>
     <br>

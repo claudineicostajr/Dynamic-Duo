@@ -13,7 +13,7 @@
 </head>
 <body>
 <div id="pesquisaMissao">
-    <input type="text" name="pesquisaMissaoInput" id="pesquisaMissaoInput" placeholder="Busca por missão">
+    <input type="text" name="pesquisa" id="pesquisaMissaoInput" placeholder="Busca por missão">
     <button id="btnPesquisarMissao" type="submit">Pesquisar</button>
 </div>
 <div id="tabelaResultadosMissao">
@@ -33,10 +33,35 @@
                     Status
                 </td>
             </tr>
-            <tr>
-                <td>
-                    Salvar reféns do Dr Doom -
-                </td>
+
+            <?php
+                require_once("../conexaoBanco.php");
+                $comando="SELECT * FROM missoes";
+
+                if(isset($_GET['pesquisa']) && $_GET['pesquisa']!=""){
+                    $pesquisa=$_GET['pesquisa'];
+                    $comando.= " WHERE m.nome like '".$pesquisa."%'";
+                }
+                //echo $comando;
+                $resultado=mysqli_query($conexao,$comando);
+                $missoes=array();
+                $linhas=mysqli_num_rows($resultado);
+                
+                if($linhas==0){
+                    echo "<tr><td colspan='3'>Nenhuma missão encontrado!</td></tr>";
+                }else{		
+
+                    while($m = mysqli_fetch_assoc($resultado)){
+                        array_push($missoes, $m);
+                    }
+
+                    foreach($missoes as $m){
+                        echo "<tr>";
+                        echo "<td>".$m['nome']."</td>";
+                   
+            ?> 
+
+            <tr>                
                 <td>
                     <img class="icone" src="assets/IMGs/icons/pdf_icon.png" alt="">
                 </td>
@@ -49,7 +74,14 @@
                         <input type="radio" name="statusMissao" id="statusMissao">Concluído
                     </div>
                 </td>
+                <?php
+                    }
+                }
+                ?>
+               
             </tr>
+           
+            
         </tbody>
     </div> 
     </table>
