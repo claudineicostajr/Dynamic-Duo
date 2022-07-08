@@ -12,17 +12,30 @@
     <title>Editar Requisitos da Missão</title>
 </head>
 <body>
+        <?php
+            require_once("../conexaoBanco.php");
+            $idMissao=$_GET['id'];
+
+            $comando="SELECT * FROM missoes WHERE idMissao=".$idMissao;
+
+            //echo $comando;
+
+            $resultado=mysqli_query($conexao, $comando);
+            $m=mysqli_fetch_assoc($resultado);
+        ?>
     <div class="form">
-    <form id="cadastrarMissao" action="cadastroMissao.php" method="post">
+    <form id="cadastrarMissao" action="PHP/individuosPHP/editarIndividuo.php" method="post">
         <table>
             <tbody>
+            <input type="hidden" value="<?=$m['idMissao']?>"
+                name="idMissao"> 
                 <th colspan=2>Editar Requisitos da Missão</th>
                 <tr>
                     <td>
                         <label for="">Nome da Missão</label>
                     </td>
                     <td>
-                        <input type="text" name="nomeMissao" id="nomeMissao">
+                        <input type="text" name="nomeMissao" id="nomeMissao" value="<?=$m['nome']?>">
                     </td>
                 </tr>
                 <tr>
@@ -30,7 +43,7 @@
                         <label for="">Descrição</label>
                     </td>
                     <td>
-                        <textarea name="descricaoMissao" id="descricaoMissao" rows="5"></textarea>
+                        <textarea name="descricaoMissao" id="descricaoMissao" rows="5" value="<?=$m['descricao']?>"></textarea>
                     </td>
                 </tr>
                 <tr>
@@ -38,7 +51,7 @@
                         <label for="">Data da missão</label>
                     </td>
                     <td>
-                        <input type="date" name="dataMissao" id="">
+                        <input type="date" name="dataMissao" id="" value="<?=$m['data']?>">
                     </td>
                 </tr>
                 <tr>
@@ -46,7 +59,7 @@
                         <label for="">Local(CEP)</label>
                     </td>
                     <td>
-                        <input type="text" name="cep" id="cep">
+                        <input type="text" name="cep" id="cep" value="<?=$m['local']?>">
                     </td>
                 </tr>
                 <tr>
@@ -82,9 +95,9 @@
                         <label for="">Recursos</label>
                     </td>
                     <td>
-                        <input type="checkbox" name="selecaoRecursos" id="selecaoRecursos">
-                        <input type="checkbox" name="selecaoRecursos" id="selecaoRecursos">
-                        <input type="checkbox" name="selecaoRecursos" id="selecaoRecursos">
+                        <input type="checkbox" name="selecaoRecursos" id="selecaoRecursos" value="<?=$m['local']?>" >
+                        <input type="checkbox" name="selecaoRecursos" id="selecaoRecursos" value="<?=$m['local']?>">
+                        <input type="checkbox" name="selecaoRecursos" id="selecaoRecursos" value="<?=$m['local']?>">
                     </td>
                 </tr>
             </tbody>

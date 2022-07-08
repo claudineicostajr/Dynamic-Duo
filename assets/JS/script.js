@@ -7,9 +7,10 @@ function callConsultaIndividuo(){
     $('#individuo').toggle('slow');
     $('#individuo').load('PHP/individuosPHP/consultaInviduoForm.php');
 }
-function callEditarIndividuo(){
+function callEditarIndividuo(id){
+    
     $('#editarIndividuo').toggle('slow');
-    $('#editarIndividuo').load('PHP/individuosPHP/editarIndividuoForm.php');
+    $('#editarIndividuo').load('PHP/individuosPHP/editarIndividuoForm.php?id='+id);
 }
 
 function callPerfil(search){
@@ -31,9 +32,10 @@ function callConsultaMissao(){
     $('#missao').toggle('slow');
     $('#missao').load('PHP/missaoPHP/consultaMissaoForm.php');
 }
-function callEditarMissao(){
+function callEditarMissao(id){
+    alert(id);
     $('#editarMissao').toggle('slow');
-    $('#editarMissao').load('PHP/missaoPHP/editarMissaoForm.php');
+    $('#editarMissao').load('PHP/missaoPHP/editarMissaoForm.php?id='+id);
 }
 //missão
 //recursos

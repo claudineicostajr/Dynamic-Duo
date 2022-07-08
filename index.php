@@ -58,9 +58,25 @@
                 echo "<script>
                 alert ('Cadastro da missão falhou!');
                 </script>";
+            }else if($retorno=='10'){
+                echo "<script>
+                alert ('Individuo editado com sucesso!');
+                </script>";
+            }else if($retorno=='11'){
+                echo "<script>
+                alert ('Edição da indivíduo falhou!');
+                </script>";
+            }else if($retorno=='12'){
+                echo "<script>
+                alert ('Missaõ editado com sucesso!');
+                </script>";
+            }else if($retorno=='13'){
+                echo "<script>
+                alert ('Edição da missão falhou!');
+                </script>";
             }else{
                 echo "<script>
-                alert ('Exclusao do recurso falhou!');
+                alert ('!');
                 </script>";
             }
         }

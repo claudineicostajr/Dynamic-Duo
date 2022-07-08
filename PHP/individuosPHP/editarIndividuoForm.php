@@ -13,17 +13,30 @@
     <title>Editar Cadastro de Individuos</title>
 </head>
 <body>
+        <?php
+            require_once("../conexaoBanco.php");
+            $idIndividuos=$_GET['id'];
+
+            $comando="SELECT * FROM individuos WHERE idIndividuos=".$idIndividuos;
+
+            //echo $comando;
+
+            $resultado=mysqli_query($conexao, $comando);
+            $i=mysqli_fetch_assoc($resultado);
+        ?>
     <div class="form">
-        <form  id="cadastrarIndividuo" action="cadastroIndividuo.php" method="post">
+        <form  id="cadastrarIndividuo" action="PHP/individuosPHP/editarIndividuo.php" method="post">
             <table>
                 <tbody>
+                <input type="hidden" value="<?=$i['idIndividuos']?>"
+                name="idIndividuos"> 
                 <th colspan=2>Editar</th>
                 <tr>
                     <td>
-                        <label for="">Alterego</label>
+                        <label for="alterego">Alterego</label>
                     </td>
                     <td>
-                        <input type="text" name="alterego" id="alterego">
+                        <input type="text" name="alterego" id="alterego" value="<?=$i['alterego']?>">
                     </td>
                 </tr>
                 <tr>
@@ -31,7 +44,7 @@
                         <label for="">Nome</label>
                     </td>
                     <td>
-                        <input type="text" name="nome" id="nome">
+                        <input type="text" name="nome" id="nome" value="<?=$i['nome']?>">
                     </td>
                 </tr>
                 <tr>
@@ -39,7 +52,7 @@
                         <label for="">Afiliação</label>
                     </td>
                     <td>
-                        <input type="text" name="afiliacao" id="afiliacao">
+                        <input type="text" name="afiliacao" id="afiliacao" value="<?=$i['afiliacao']?>">
                     </td>
                 </tr>
                 <tr>
@@ -47,7 +60,7 @@
                         <label for="">Habilidades</label>
                     </td>
                     <td>
-                        <input type="text" name="habilidades" id="">
+                        <input type="text" name="habilidades" id="" value="<?=$i['habilidades']?>">
                     </td>
                 </tr>
                 <<tr>

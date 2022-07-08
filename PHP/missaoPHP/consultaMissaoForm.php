@@ -66,7 +66,9 @@
                     <img class="icone" action="PHP/gerarPDF.php" src="assets/IMGs/icons/pdf_icon.png" alt="">
                 </td>
                 <td >
-                    <img class="icone" id="btnEditarMissao" onclick="callEditarMissao()" src="assets/IMGs/icons/pencil.png" alt="">
+                    <form action="PHP/individuosPHP/editarIndividuo.php">
+                        <img class="icone" id="btnEditarMissao" onclick="callEditarMissao('<?=$m['idMissao']?>')" src="assets/IMGs/icons/pencil.png" >
+                    </form>
                 </td>
                 <td>
                     <div id="statusMissaoRadio">

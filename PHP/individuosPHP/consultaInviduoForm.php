@@ -60,11 +60,12 @@
                         echo "<td>".$i['alterego']."</td>";                   
             ?> 
                     <!-- form editar -->
-                    <form action="">
-                        <td>
-                            <img class="icone" id="btnEditarIndividuo" onclick="callEditarIndividuo()" src="assets/IMGs/icons/pencil.png" alt="">
-                        </td>
-                    </form>
+                    <td>
+                        <form action="PHP/individuosPHP/editarIndividuo.php" method="POST">
+                            <img class="icone" id="btnEditarIndividuo" 
+                            onclick="callEditarIndividuo('<?=$i['idIndividuos']?>')" src="assets/IMGs/icons/pencil.png" >                       
+                        </form>
+                    </td>
             <?php
                     }
                 }
