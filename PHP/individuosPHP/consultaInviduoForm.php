@@ -32,28 +32,29 @@
                 </td>
             </tr>
             
-   
-            <?php
-                require_once("../conexaoBanco.php");
-                $comando="SELECT * FROM individuos";
+            <tr>
+                <?php
+                    require_once("../conexaoBanco.php");
+                    $comando="SELECT * FROM individuos";
 
-                if(isset($_GET['pesquisa']) && $_GET['pesquisa']!=""){
-                    $pesquisa=$_GET['pesquisa'];
-                    $comando.= " WHERE alterego like '".$pesquisa."%'";
-                }
-                //echo $comando;
-                $resultado=mysqli_query($conexao,$comando);
-                $individuos=array();
-                $linhas=mysqli_num_rows($resultado);
-                
-                if($linhas==0){
-                    echo "<tr><td colspan='2'>Nenhum individuo encontrado!</td></tr>";
-                }else{		
-
-                    while($i = mysqli_fetch_assoc($resultado)){
-                        array_push($individuos, $i);
+                    if(isset($_GET['pesquisa']) && $_GET['pesquisa']!=""){
+                        $pesquisa=$_GET['pesquisa'];
+                        $comando.= " WHERE alterego like '".$pesquisa."%'";
                     }
+                    //echo $comando;
+                    $resultado=mysqli_query($conexao,$comando);
+                    $individuos=array();
+                    $linhas=mysqli_num_rows($resultado);
+                    
+                    if($linhas==0){
+                        echo "<tr><td colspan='2'>Nenhum individuo encontrado!</td></tr>";
+                    }else{		
 
+                        while($i = mysqli_fetch_assoc($resultado)){
+                            array_push($individuos, $i);
+                        }
+
+<<<<<<< HEAD
                     foreach($individuos as $i){
                         echo "<tr>";
                         echo "<td> <img class='selecaoPerfil' src='assets/IMGs/bancoImagens/".$i['imagemPerfil']."'> </td>";                   
@@ -67,9 +68,24 @@
                         </form>
                     </td>
             <?php
+=======
+                        foreach($individuos as $i){
+                            echo "<tr>";
+                            echo "<td> <img class='selecaoPerfil' src='assets/IMGs/bancoImagens/".$i['imagemPerfil']."'> </td>";                   
+                            echo "<td>".$i['alterego']."</td>";                   
+                ?> 
+                        <!-- form editar -->
+                        <td>
+                            <form action="PHP/gerarPDF.php">
+                                <img  class="icone" id="btnEditarIndividuo" onclick="callEditarIndividuo()" src="assets/IMGs/icons/pencil.png" alt="">
+                            </form>
+                        </td>
+                <?php
+                        }
+>>>>>>> ca790284c049dd2903f8516954a032a410cc25f7
                     }
-                }
-                ?>
+                    ?>
+                </tr>
         </tbody>
     </table>
     <br>

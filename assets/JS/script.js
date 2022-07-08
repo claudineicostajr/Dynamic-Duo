@@ -17,8 +17,8 @@ function callPerfil(search){
     $('img#corpo').attr('src','');
     var estagio1 = search.replace('perfil','corpo');
     var  estagio2 = estagio1.replace('.jpg','.png');
-    // console.log("Perfil "+search);
-    // console.log("Corpo "+estagio2); 
+    console.log("Perfil "+search);
+    console.log("Corpo "+estagio2); 
     $('img#corpo').attr('src',estagio2);
 }
 

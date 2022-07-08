@@ -1,7 +1,7 @@
 <?php
-$local="localhost";
+$local="127.0.0.1:3307";
 $usuario="root";
-$senha="root";
+$senha="";
 $banco="dbshield";
 
 $conexao=mysqli_connect($local, $usuario, $senha, $banco);
