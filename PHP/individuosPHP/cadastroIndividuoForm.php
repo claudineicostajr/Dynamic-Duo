@@ -65,13 +65,13 @@
                     </td>
                     <td>
                         <label for="">Perfil</label>
-                        <input type="file" name="imgPerfil" id="imgPerfil">
+                        <input type="file" name="imgPerfil" id="imgPerfil" value="">
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <label for="">Corpo</label>
-                        <input type="file" name="imgCorpo" id="imgCorpo">
+                        <input type="file" name="imgCorpo" id="imgCorpo" value="">
                     </td>
                 </tr>
 

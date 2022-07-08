@@ -25,7 +25,7 @@
             $i=mysqli_fetch_assoc($resultado);
         ?>
     <div class="form">
-        <form  id="cadastrarIndividuo" action="PHP/individuosPHP/editarIndividuo.php" method="post">
+        <form  id="cadastrarIndividuo" action="PHP/individuosPHP/editarIndividuo.php" method="post" enctype="multipart/form-data">
             <table>
                 <tbody>
                 <input type="hidden" value="<?=$i['idIndividuos']?>"
@@ -68,8 +68,20 @@
                         <label for="">Moralidade</label>
                     </td>
                     <td id="moralidade">
-                        <input type="radio" name="moralidade" id="moralidade">Herói
-                        <input type="radio" name="moralidade" id="moralidade">Vilão
+                        <?php
+                        
+                        if($i['moralidade'] == '1'){
+                          echo 
+                          '<input type="radio" name="moralidade" checked value="1" id="moralidade">Herói
+                           <input type="radio" name="moralidade" value="2" id="moralidade">Vilão';
+                        }else{
+                            echo 
+                            '<input type="radio" name="moralidade" value="1" id="moralidade">Herói
+                             <input type="radio" name="moralidade" checked value="2" id="moralidade">Vilão';
+                        }
+
+                        ?>
+                       
                     </td>
                 </tr>
                 <tr>

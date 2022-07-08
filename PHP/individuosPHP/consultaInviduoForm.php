@@ -54,12 +54,11 @@
                             array_push($individuos, $i);
                         }
 
-<<<<<<< HEAD
                     foreach($individuos as $i){
                         echo "<tr>";
                         echo "<td> <img class='selecaoPerfil' src='assets/IMGs/bancoImagens/".$i['imagemPerfil']."'> </td>";                   
-                        echo "<td>".$i['alterego']."</td>";                   
-            ?> 
+                        echo "<td>".$i['alterego']."</td>";   
+                ?> 
                     <!-- form editar -->
                     <td>
                         <form action="PHP/individuosPHP/editarIndividuo.php" method="POST">
@@ -67,25 +66,12 @@
                             onclick="callEditarIndividuo('<?=$i['idIndividuos']?>')" src="assets/IMGs/icons/pencil.png" >                       
                         </form>
                     </td>
-            <?php
-=======
-                        foreach($individuos as $i){
-                            echo "<tr>";
-                            echo "<td> <img class='selecaoPerfil' src='assets/IMGs/bancoImagens/".$i['imagemPerfil']."'> </td>";                   
-                            echo "<td>".$i['alterego']."</td>";                   
-                ?> 
-                        <!-- form editar -->
-                        <td>
-                            <form action="PHP/gerarPDF.php">
-                                <img  class="icone" id="btnEditarIndividuo" onclick="callEditarIndividuo()" src="assets/IMGs/icons/pencil.png" alt="">
-                            </form>
-                        </td>
-                <?php
+                    <?php
+                            echo "</tr>";                
                         }
->>>>>>> ca790284c049dd2903f8516954a032a410cc25f7
                     }
                     ?>
-                </tr>
+            </tr>
         </tbody>
     </table>
     <br>
@@ -94,4 +80,3 @@
 <script src="assets/JS/jquery-3.6.0.min.js"></script>
 <script src="assets/JS/script.js"></script>
 </html>
-
