@@ -33,7 +33,6 @@ function callConsultaMissao(){
     $('#missao').load('PHP/missaoPHP/consultaMissaoForm.php');
 }
 function callEditarMissao(id){
-    alert(id);
     $('#editarMissao').toggle('slow');
     $('#editarMissao').load('PHP/missaoPHP/editarMissaoForm.php?id='+id);
 }
