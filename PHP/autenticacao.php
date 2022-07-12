@@ -5,9 +5,9 @@ require_once("conexaoBanco.php");
 $nomeUsuario=$_POST['nomeUsuario'];
 $senha=$_POST['senha'];
 
-//função md5() criptografia a senha no algoritmo MD5
-// $senhaMD5=md5($senha);
-$comando="SELECT * FROM usuarios WHERE nomeUsuario='".$nomeUsuario."' AND senha='".$senha."'";
+// função md5() criptografia a senha no algoritmo MD5
+$senhaMD5=md5($senha);
+$comando="SELECT * FROM usuarios WHERE nomeUsuario='".$nomeUsuario."' AND senha='".$senhaMD5."'";
 // echo $comando;
 
 $resultado=mysqli_query($conexao, $comando);

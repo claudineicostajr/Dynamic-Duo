@@ -90,3 +90,30 @@ ENGINE = InnoDB;
 
 ALTER TABLE `individuos` DROP `email`;
 
+-- Usuário
+
+INSERT INTO `usuarios` (`idUsuario`, `nomeUsuario`, `senha`, `nivel`) VALUES (NULL, 'nicky_fury', '01cfcd4f6b8770febfb40cb906715822', '1');
+
+INSERT INTO `usuarios` (`idUsuario`, `nomeUsuario`, `senha`, `nivel`) VALUES (NULL, 'agentes-shield', '01cfcd4f6b8770febfb40cb906715822', '2');
+
+-- recursos
+
+INSERT INTO recursos (nome, descricao) VALUES ('Helicóptero','Aeronave')
+
+INSERT INTO recursos (nome, descricao) VALUES ('Camuflagem','Equipamento de Camuflagem')
+
+
+-- individuos
+
+INSERT INTO individuos (alterego, nome, afiliacao, habilidades, moralidade, imagemCorpo, imagemPerfil ) VALUES('Ultron', 'Ultron', 'solo', 'Terrorismo', '2', 'corpo2022.07.12-02.27.07.png', 'perfil2022.07.12-02.27.07.jpg')
+
+INSERT INTO individuos (alterego, nome, afiliacao, habilidades, moralidade, imagemCorpo, imagemPerfil ) VALUES('Homem de Ferro', 'Tony Stark', 'Vingadores', 'Engenharia', '1', 'corpo2022.07.12-02.30.12.png', 'perfil2022.07.12-02.30.12.jpg')
+
+
+-- missoes
+
+INSERT INTO missoes (nome, descricao, data, local, heroi, vilao, status) VALUES ('Resgate', 'Resgatar os reféns', '2022-07-16', '89237263', '1', '2', 1)
+
+INSERT INTO missoes (nome, descricao, data, local, heroi, vilao, status) VALUES ('Atacar', 'Atacar a base dos inimigos', '2022-07-14', '89237564', '1', '2', 1)
+
+

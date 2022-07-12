@@ -26,7 +26,7 @@ move_uploaded_file($_FILES['imgPerfil']['tmp_name'], $pasta.$novoNomeFoto2); //u
 $comando="INSERT INTO individuos (alterego, nome, afiliacao, habilidades, moralidade, imagemCorpo, imagemPerfil  ) VALUES('".$alterego."', '".$nome."', '".$afiliacao."', '".$habilidades."', '".$moralidade."', '".$novoNomeFoto."', 
 '".$novoNomeFoto2."')";
 
-// echo $comando;
+ // echo $comando;
 
 $resultado=mysqli_query($conexao, $comando);
 
