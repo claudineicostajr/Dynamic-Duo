@@ -16,7 +16,11 @@ $idRecursos=$_POST['selecaoRecursos'];
 
 $comando="INSERT INTO missoes (nome, descricao, data, local, heroi, vilao, status) VALUES ('".$nome."', '".$descricao."', '".$data."', '".$local."', '".$heroi."', '".$vilao."', ".$status.")";
 
+<<<<<<< HEAD
  // echo $comando;
+=======
+ echo $comando;
+>>>>>>> d3125250c5eb3c769fd979604c4409457ca9c26a
 
  $resultado=mysqli_query($conexao, $comando);
 
