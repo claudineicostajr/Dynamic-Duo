@@ -11,9 +11,9 @@ $comando="INSERT INTO recursos (nome, descricao) VALUES ('".$nome."','".$descric
 $resultado=mysqli_query($conexao, $comando);
 
 if ($resultado==true){
-    header("Location: ../../index.php?retorno=6");
+    header("Location: ../../index.php?retorno=4");
 }else{
-    header("Location ../../index.php?retorno=7");
+    header("Location ../../index.php?retorno=5");
 }
 
 

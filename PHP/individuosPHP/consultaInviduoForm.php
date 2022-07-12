@@ -39,7 +39,7 @@
 
                     if(isset($_GET['pesquisa']) && $_GET['pesquisa']!=""){
                         $pesquisa=$_GET['pesquisa'];
-                        $comando.= " WHERE alterego like '".$pesquisa."%'";
+                        $comando.= " WHERE alterego like '".$_GET['pesquisa']."%' OR ";
                     }
                     //echo $comando;
                     $resultado=mysqli_query($conexao,$comando);
