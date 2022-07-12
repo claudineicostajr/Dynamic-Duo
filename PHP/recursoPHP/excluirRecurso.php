@@ -17,9 +17,9 @@ $idRecurso=$_POST['idRecurso'];
         $comando = "DELETE FROM recursos WHERE idRecurso=".$idRecurso;
         $resultado=mysqli_query($conexao, $comando);
         if($resultado==true){
-            header("Location: ../../index.php?retorno=4");
+            header("Location: ../../index.php?retorno=2");
         }else{
-            header("location: ../../index.php?retorno=5");
+            header("location: ../../index.php?retorno=3");
         }
     }
 

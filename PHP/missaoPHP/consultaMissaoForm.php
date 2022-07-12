@@ -40,7 +40,8 @@
 
                 if(isset($_GET['pesquisa']) && $_GET['pesquisa']!=""){
                     $pesquisa=$_GET['pesquisa'];
-                    $comando.= " WHERE m.nome like '".$pesquisa."%'";
+                    $comando.= " WHERE m.nome LIKE '".$_GET[pesquisa]."%'";
+
                 }
                 //echo $comando;
                 $resultado=mysqli_query($conexao,$comando);
