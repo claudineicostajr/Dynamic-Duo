@@ -23,17 +23,14 @@
                 <td>
                     Nome da Missão
                 </td>
-                <td>
-                    Relatório
-                </td>
+
                 <td>
                     Editar
                 </td>
-                <td>
+                <td colspan='2'>
                     Status
                 </td>
             </tr>
-
             <?php
                 require_once("../conexaoBanco.php");
                 $comando="SELECT * FROM missoes";
@@ -56,32 +53,36 @@
                     }
 
                     foreach($missoes as $m){
-                        echo "<tr>";
-                        echo "<td>".$m['nome']."</td>";
-                   
+                        echo "<tr>  <td>".$m['nome']."</td>
+                                       
+
+
+                        <td>
+                            <form action='PHP/individuosPHP/editarIndividuo.php'>
+                                <img class='icone' id='btnEditarMissao' onclick='callEditarMissao(".$m['idMissao'].")' src='assets/IMGs/icons/pencil.png' >
+                            </form>
+                        </td>
+
+                        <td>
+                            <div id='statusMissaoRadio'>
+                                <input type='radio' name='statusMissao' id='statusMissao'>Pendente
+                            </div>
+                        </td>
+
+                        <td>
+                            <div id='statusMissaoRadio'>
+                                <input type='radio' name='statusMissao' id='statusMissao'>Concluído
+                            </div>
+                        </td>
+
+                        </tr>";
+                            };
+                        };
             ?> 
 
-            <tr>                
-                <td>
-                    <img class="icone" action="PHP/gerarPDF.php" src="assets/IMGs/icons/pdf_icon.png" alt="">
-                </td>
-                <td >
-                    <form action="PHP/individuosPHP/editarIndividuo.php">
-                        <img class="icone" id="btnEditarMissao" onclick="callEditarMissao('<?=$m['idMissao']?>')" src="assets/IMGs/icons/pencil.png" >
-                    </form>
-                </td>
-                <td>
-                    <div id="statusMissaoRadio">
-                        <input type="radio" name="statusMissao" id="statusMissao">Pendente
-                        <input type="radio" name="statusMissao" id="statusMissao">Concluído
-                    </div>
-                </td>
-                <?php
-                    }
-                }
-                ?>
+
                
-            </tr>
+
            
             
         </tbody>
@@ -94,3 +95,14 @@
 <script src="../assets/JS/jquery-3.6.0.min.js"></script>
 <script src="../assets/JS/script.js"></script>
 </html>
+<!-- 
+
+retirado gerador de PDF provisóriamente;
+
+                    <td>
+                    Relatório
+                </td>
+                            <td>
+                            <img class='icone' action='PHP/gerarPDF.php' src='assets/IMGs/icons/pdf_icon.png' alt='>
+                        </td>
+ -->

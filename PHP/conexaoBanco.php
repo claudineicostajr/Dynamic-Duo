@@ -1,5 +1,5 @@
 <?php
-$local="127.0.0.1";
+$local="127.0.0.1:3307";
 $usuario="root";
 $senha="";
 $banco="dbshield";
